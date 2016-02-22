@@ -1,0 +1,67 @@
+{% extends 'common/base-iframe.html' %}
+{% block content %}
+<body>
+<header>
+    <div class="header">
+        <div class="navbar-header">
+            <a href="/admin/index" class="navbar-brand">
+                <i class="entypo-home"></i> <span>主页</span>
+            </a>
+            <div class="navbar-leftArrow">＜</div>
+        </div>
+        <div class="pull-left">
+            <span class="navbar-logo">XX管理系统</span>
+        </div>
+        <div class="pull-right navbar-user">
+            <a class="button">
+                <i class="entypo-user left"></i>
+                <font>{{ luser.username }}</font>
+            </a>
+            <a class="button" href="/logout">
+                <font class="">注销 </font>
+                <i class="entypo-logout right"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="page-container">
+    <div class="sidebar-menu">
+        <ul id="main-menu">
+{#            <li class="has-sub root-level">#}
+{#                <a href="javascript:void(0);">#}
+{#                    <i class="entypo-menu"></i>#}
+{#                    <span>公共建筑</span>#}
+{#                </a>#}
+{#                <ul class="">#}
+{#                    <li><a class="" href="">eeeeeeeeeee</a></li>#}
+{#                    <li><a href="">eeeeeeeeeee</a></li>#}
+{#                    <li><a href="">eeeeeeeeeee</a></li>#}
+{#                    <li><a href="">eeeeeeeeeee</a></li>#}
+{#                </ul>#}
+{#            </li>#}
+            <li class="has-sub root-level">
+                <a href="javascript:void(0);">
+                    <i class="entypo-menu"></i>
+                    <span>XXX</span>
+                </a>
+                <ul>
+{#                    <li><a href="javascript:iframe_jump('/admin/enterprisetype_list/');">企业大类管理</a></li>#}
+                    <li><a href="javascript:iframe_jump('/admin/enterprise_list/');">XXX</a></li>
+                    <li><a href="javascript:iframe_jump('/admin/indrcaginfo_list/')">XXXX</a></li>
+{#                    <li><a href="">eeeeeeeeeee</a></li>#}
+{#                    <li><a href="">eeeeeeeeeee</a></li>#}
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <div class="main-content">
+		<div class="panel">
+			<iframe id="contentiframe" src="{{ defUrl }}" frameborder="0" scrolling="scroll" marginheight="100%" marginwidth="100%" height="100%" width="100%" ></iframe>
+		</div>
+	</div>
+</div>
+
+
+</body>
+{% endblock %}

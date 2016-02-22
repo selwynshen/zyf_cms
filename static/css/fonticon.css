@@ -1,0 +1,53 @@
+﻿/*Entypo font*/
+.fontomas {
+    font-family: 'FontomasEmtypo';
+    margin-right: 10px;
+    font-size: 16px;
+    position: relative;
+    left: 2px;
+    line-height: 13px;
+}
+@font-face {
+    font-family: 'FontomasEmtypo';
+    src: url('/static/Fonts/entypo/fontomas-webfont.eot');
+    src: url('/static/Fonts/entypo/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/Fonts/entypo/fontomas-webfont.woff') format('woff'),
+         url('/static/Fonts/entypo/fontomas-webfont.ttf') format('truetype'),
+         url('/static/Fonts/entypo/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*IconicFill font*/
+@font-face {
+    font-family: 'FontomasIconicFill';
+    src: url('/static/Fonts/iconicfill/fontomas-webfont.eot');
+    src: url('/static/Fonts/iconicfill/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/Fonts/iconicfill/fontomas-webfont.woff') format('woff'),
+         url('/static/Fonts/iconicfill/fontomas-webfont.ttf') format('truetype'),
+         url('/static/Fonts/iconicfill/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*IconicStroke Font*/
+@font-face {
+    font-family: 'FontomasIconicStroke';
+    src: url('/static/Fonts/iconicstroke/fontomas-webfont.eot');
+    src: url('/static/Fonts/iconicstroke/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/Fonts/iconicstroke/fontomas-webfont.woff') format('woff'),
+         url('/static/Fonts/iconicstroke/fontomas-webfont.ttf') format('truetype'),
+         url('/static/Fonts/iconicstroke/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*WebSymbolsRegular Font*/
+@font-face {
+    font-family: 'FontomasWebSymbolsRegular';
+    src: url('/static/Fonts/websymbolsregular/fontomas-webfont.eot');
+    src: url('/static/Fonts/websymbolsregular/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/Fonts/websymbolsregular/fontomas-webfont.woff') format('woff'),
+         url('/static/Fonts/websymbolsregular/fontomas-webfont.ttf') format('truetype'),
+         url('/static/Fonts/websymbolsregular/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

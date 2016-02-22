@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="苏州市温室气体排放管理系统">
+    <meta name="description" content="苏州市温室气体排放管理系统">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/entypo.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/fonticon.css">
+
+    {% block css %}
+    {% endblock %}
+    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+    <!--<script type="text/javascript" src="js/main-gsap.js"></script>-->
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+    <!--<script type="text/javascript" src="js/resizeable.js"></script>
+    <script type="text/javascript" src="js/neon-custom.js"></script>-->
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="/static/js/iframe-adapter.js"></script>
+</head>
+{% block content %}
+{% endblock %}
+<script src="/static/js/bootbox.js"></script>
+<script type="text/javascript" src="/static/js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="/static/js/upload.js"></script>
+<script type="text/javascript" >
+    function a(confirm,href){
+        bootbox.confirm(confirm, function(result) {
+            if(result||result=='true') $("#contentiframe").attr('src',href);
+        });
+    }
+    function showConfirmDialog(msg,callback,params)
+    {
+        bootbox.confirm(msg,function(result){
+            if(result||result=='true')
+            {
+                callback(params);
+            }
+        });
+    }
+    function showAlertDialog(msg)
+    {
+        bootbox.dialog({
+            message:msg,
+            buttons: {
+                success: {
+                    label: "确定",
+                    className: "btn-success",
+                    callback: function() {
+                        //
+                    }
+                }
+            }
+        });
+    }
+    function iframe_jump(url)
+    {
+        $("#contentiframe").attr('src',url);
+    }
+
+    function dialogPop(confirm,href){
+        return bootbox.dialog({
+            message: confirm,
+            title: "导入"
+        });
+    }
+    function alertDialog()
+    {
+        bootbox.dialog({
+            message:"起始年份不能小于结束年份!",
+            closeButton: false,
+            buttons: {
+                success: {
+                    label: "确定",
+                    className: "btn-success",
+                    callback: function() {
+                        //
+                    }
+                }
+            }
+        });
+    }
+    $(function(){
+        $.AdaptIframe('contentiframe');
+    });
+    {% block js %}
+    {% endblock %}
+
+</script>
+</html>

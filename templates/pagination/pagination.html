@@ -1,0 +1,39 @@
+{% if is_paginated %}
+{% load i18n %}
+    <div class="clear"></div>
+<div class="panel-footer">
+    <div class="row">
+        <div class="pull-right">
+            <ul class="pagination">
+                <li><a href="?page=1{{ getvars }}{{ hashtag }}">首页</a></li>
+                <li>
+                    {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}{{ getvars }}{{ hashtag }}">上一页</a>
+                    {% else %}
+                        <span class="disabled prev">上一页</span>
+                    {% endif %}
+                </li>
+                {% for page in pages %}
+                    {% if page %}
+                        {% ifequal page page_obj.number %}
+                            <li class="active"><span class="disabled">{{ page }}</span></li>
+                        {% else %}
+                            <li><a href="?page={{ page }}{{ getvars }}{{ hashtag }}" class="page">{{ page }}</a> </li>
+                        {% endifequal %}
+                    {% else %}
+                        ...
+                    {% endif %}
+                {% endfor %}
+                <li>
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}{{ getvars }}{{ hashtag }}" class="next">下一页</a>
+                    {% else %}
+                        <span class="disabled next">下一页</span>
+                    {% endif %}
+                </li>
+                <li><a href="?page={{ pages|length }}{{ getvars }}{{ hashtag }}">尾页</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <meta name="keywords" content="苏州市温室气体排放管理系统">
+    <meta name="description" content="苏州市温室气体排放管理系统">
+{#    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">#}
+    <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="/static/js/iframe-adapter.js"></script>
+    <style type="text/css">
+        .onp{display: block;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/css/scrollable.css" />
+{#    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/dojo/dijit/themes/tundra/tundra.css">#}
+{#    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/esri/css/esri.css">#}
+    <link rel="stylesheet" type="text/css" href="/static/css/multi-style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.multiselect.css" />
+    <link href="/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<script type="text/javascript" src="../static/js/scrollable.js"></script>
+</head>
+<body>
+<div id="header">
+   <div id="logo"><h1><a href="" title="返回登录页面">返回</a></h1></div>
+</div>
+<h2>{{ error }}</h2>
+<div id="main">
+   <h2 class="top_title" style="text-align: center;"><a href="/">温室气体排放管理系统</a></h2>
+   <p class="alert alert-danger" style="height:24px; line-height:24px; margin:16px;text-align: center;display: none;" id="errors" ></p>
+   <form id="form" name="form" role="form" action="/register/" method="post" enctype="multipart/form-data">
+{#       {% csrf_token %}#}
+	<div id="wizard">
+		<ul id="status">
+			<li class="active"><strong>1.</strong>step1</li>
+			<li><strong>2.</strong>step2</li>
+            <li><strong>3.</strong>step3</li>
+			<li><strong>4.</strong>step4</li>
+		</ul>
+
+		<div class="items">
+			<div class="page">
+{#               <h3>创建一个账户<br/><em>请填写您的注册账户信息，用于登录。</em></h3>#}
+               <p style="margin-top:10px;"><label>用户名：</label><input type="text" class="input" id="user" name="username" /></p>
+               <p><label>密码：</label><input type="password" class="input" id="pass" name="password" /></p>
+               <p><label>确认密码：</label><input type="password" class="input" id="pass1" name="password1" /></p>
+                <p><label>角色：</label>
+                    <select id="role_select" name="role">
+                        {% for role in roles  %}
+                            <option value="{{ role.id }}">{{ role.name }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label style="text-align: right;padding-right:10px;width:10%;display: none;">组：</label>
+                    <select id="group_select" name="group" style="display: none;">
+                        {% for group in groups  %}
+                            <option value="{{ group.id }}">{{ group.name }}</option>
+                        {% endfor %}
+                    </select>
+
+                </p>
+
+                <p id="">
+                    <label>所属地区：</label>
+                    <span style="width: 70%;display: inline-block;" id="regionDiv"></span>
+                </p>
+               <div class="btn_nav">
+                  <input id='step1_nextBtn' type="button" class="next right" value="下一步&raquo;" />
+               </div>
+            </div>
+            <div class="page">
+{#                <h3>创建一个账户<br/><em>请填写联系方式</em></h3>#}
+                <p style="margin-top:10px;"><label>联系人：</label><input type="text" class="input" name="magname" id="magname"/></p>
+                <p><label>联系电话：</label><input type="text" class="input" name="magphone" id="magphone"/></p>
+                <p><label>联系邮箱：</label><input type="email" class="input" name="magemail" id="magemail"/></p>
+                <p><label>联系地址：</label><input type="address" class="input" name="address" id="address"/></p>
+{#                <p><label>填报单位：</label><input type="text" class="input" name="report_department" id="report_department"/></p>#}
+                <p><label>填写坐标：</label>
+                    <label style="width:10%;">经度</label><input style="width:15%;margin-right:5px;" type="text" class="input" name="longitude" id="longitude"/>
+                    <label style="width:10%;">纬度</label><input style="width:15%;margin-right:5px;" type="text" class="input" name="latitude" id="latitude"/>
+                </p>
+
+                <div id="map" class="map"></div>
+                <div class="btn_nav">
+                    <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                    <input type="button" class="next right" value="下一步&raquo;" onclick=""/>
+                </div>
+
+            </div>
+            <div class="page">
+                <div id='step3_context'>
+
+                </div>
+                <div>
+                    <div class="btn_nav">
+                        <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                        <input type="button" class="next right" value="下一步&raquo;" />
+                    </div>
+                </div>
+            </div>
+			<div class="page">
+{#               <h3>完成注册<br/><em>点击提交完成注册。</em></h3>#}
+               <h4  style="margin-top:10px;">欢迎您！</h4>
+               <p>请点击“提交”按钮完成注册。</p>
+               <br/>
+               <br/>
+               <br/>
+               <div class="btn_nav">
+                  <input name="button" type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                   <button type="button" class="next right" onclick="formSubmit()">提交</button>
+               </div>
+            </div>
+		</div>
+
+	</div>
+</form><br />
+    <div style="display: none;">
+    <div id='gyqy' class="page">
+{#        <h3>填写联系信息<br/><em>请填写企业相关信息</em></h3>#}
+        <p style="margin-top:10px;"><label style="width: 27%;">企业机构代码：</label><input type="text" class="input" name="en_org_code" id="en_org_code"/></p>
+        <p><label style="width: 27%;">企业名称：</label><input type="text" class="input" name="gyqyname" id="gyqyname"/></p>
+        <p><label style="width: 27%;">所属行业：</label>
+            <select name="enterprise_id" style="width:71%;">
+                {% for enterprise in enterprises %}
+                    <option value="{{ enterprise.id }}">{{ enterprise.name }}</option>
+                {% endfor %}
+            </select></p>
+            <p><label style="width: 27%;">请选择涉及的工业过程：</label>
+{#        <div class="col-sm-2">#}
+            <select class="form-control" multiple="multiple" name="indrcaginfo_id" size="5" id="indrcaginfo_id">
+                {% for indrcaginfo in indrcaginfos %}
+                    {% if indrcaginfo.id == 9 %}
+                        <option value="{{ indrcaginfo.id }}">{{ indrcaginfo.name }}（集成电路器件，分立器件，光电半导体，逻辑IC，模拟IC，储存器等）</option>
+                    {% else %}
+                        <option value="{{ indrcaginfo.id }}">{{ indrcaginfo.name }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+             </p>
+
+    </div>
+    <div id='gj' class="page">
+{#        <h3>填写联系信息<br/><em>请填写公建企业相关信息</em></h3>#}
+        <p style="margin-top:10px;"><label>公建名称：</label><input type="text" class="input" name="archname" id="archname"/></p>
+        <p><label>公建类别：</label><input type="text" class="input" name="type" id="type"/></p>
+{#        <p><label>公建面积：</label><input type="text" class="input" name="area" id="area" value="0.125" onfocus="javascript:this.value='';" onblur="javascript:this.value='万平方米';" style="color: #bbb;" /></p>#}
+        <p><label>公建面积：</label><input type="text" class="input" name="area" id="area" />
+            <label style="float:right;height: 0;position: relative;top: -30px;color: #bbb;">万平方米</label>
+        </p>
+        <p><label>业主单位：</label><input type="text" class="input" name="owner" id="owner"/></p>
+
+    </div>
+</div>
+
+        <p><input type="button" class="back_home" onclick="javascript:history.back();" value="返回登录页面"></p>
+
+</div>
+<script type="text/javascript" src="/static/js/django-ajax.js" ></script>
+<script type="text/javascript" src="/static/js/bootbox.js"></script>
+<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.multiselect.js"></script>
+
+<script type="text/javascript" src="/static/js/validate.js" ></script>
+<script type="text/javascript" src="/static/js/register.js" ></script>
+<script type="text/javascript">
+
+//根据角色选择，如果是公共建筑就在step显示公共建筑的相应页面，如果是工业企业则显示工业企业的页面；
+$(function(){
+    var step1_validator = new FormValidator('form',[
+        {
+            name: 'username',
+            display: '用户名',
+{#            rules: 'required|alpha_numeric'#}
+            rules: 'required'
+        },
+        {
+            name: 'password',
+            display: '密码',
+            rules: 'required'
+        },
+        {
+            name: 'password1',
+            display: '确认密码',
+            rules: 'required|matches[password]'
+        }
+    ]);
+    $('#step1_nextBtn').bind('click',function(){
+        var selVal = $('#role_select').val();
+        var contextObj = {
+            '1':$('#gj').html(),
+            '2':$('#gyqy').html()
+        };
+        $('#step3_context').html(contextObj[selVal]);
+    });
+    //
+    var step2_validator = new FormValidator('form',[
+        {
+            name: 'magname',
+            display: '联系人',
+            rules: 'required'
+        },
+        {
+            name: 'magphone',
+            display: '联系电话',
+            rules: 'required|numeric|integer'
+        },
+        {
+            name: 'magemail',
+            display: '邮箱',
+            rules: 'required|valid_email|valid_emails'
+        },
+        {
+            name: 'address',
+            display: '地址',
+            rules: 'required'
+        },
+        {
+            name: 'report_department',
+            display: '填报单位',
+            rules: 'required'
+        },
+        {
+            name: 'longitude',
+            display: '经度',
+            rules: 'required'
+        } ,
+        {
+            name: 'latitude',
+            display: '纬度',
+            rules: 'required'
+        }
+    ]);
+    //
+    var step4_validator = new FormValidator('form',[
+        {
+            name: 'code',
+            display: '企业代码',
+            rules: 'required'
+        },
+        {
+            name: 'gyqyname',
+            display: '企业名称',
+            rules: 'required'
+        }
+    ]);
+    //
+    var step3_validator = new FormValidator('form',[
+        {
+            name: 'archname',
+            display: '公建名称',
+            rules: 'required'
+        },
+        {
+            name: 'type',
+            display: '公建类别',
+            rules: 'required'
+        },
+        {
+            name: 'area',
+            display: '公建面积',
+            rules: 'required'
+        },
+        {
+            name: 'owner',
+            display: '业主单位',
+            rules: 'required'
+        },
+    ]);
+//
+
+
+    $("#wizard").scrollable({
+		onSeek: function(event,i){
+			$("#status li").removeClass("active").eq(i).addClass("active");
+            if (i==2){
+                if ($('#role_select').val()==2)
+                {
+                    var industrySelect = $("#indrcaginfo_id").multiselect({
+                        hide: ["explode", 1000],
+                        click:function(event,ui){
+                            var selectLis = $(".ui-multiselect-checkboxes li").find("input:checked");
+                            var count = selectLis.length;
+                            var selectLi;
+                            var hasNonPne = false;
+                            for (var i= 0;i<count;i++)
+                            {
+                                selectLi = selectLis[i];
+                                if (selectLi.value == 14)
+                                {
+                                    hasNonPne = true;
+                                    break;
+                                }
+                            }
+                            var lastEle = $(".ui-multiselect-checkboxes li").find("input").last();
+                            //如果没有非工业过程选择且至少有一项，则非工业过程选项禁用
+                            if (count>0&&!hasNonPne)
+                            {
+                                lastEle.attr("disabled",true);
+                                lastEle.parent().css("cursor","not-allowed");
+                            }
+                            else{
+                                lastEle.attr("disabled",false);
+                                lastEle.parent().css("cursor","");
+                            }
+                        },
+                        selectedText: '# 项工业过程被选中'
+                    });
+                    //industrySelect.multiselect("");
+                    $("button.ui-multiselect").css("width","72%");
+                }
+
+
+
+            }
+		},
+		onBeforeSeek:function(event,i){
+            switch (i) {
+                case 1:
+                    return step1_validator.formValidate();
+                    break;
+                case 2:
+                    return step2_validator.formValidate();
+                    break;
+                case 3:
+                    var role=document.getElementById('role_select').value;
+                        if(role ==1){
+                            return step3_validator.formValidate();
+                        }
+                    else
+                        if(role == 2)
+                        {
+                            return step4_validator.formValidate();
+                        }
+                    break;
+            }
+		}
+	});
+});
+
+
+</script>
+{#<script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.4"></script>#}
+{#<script type="text/javascript" src="/static/js/map.js"></script>#}
+</body>
+</html>

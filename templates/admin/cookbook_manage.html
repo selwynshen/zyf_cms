@@ -1,0 +1,74 @@
+{% extends 'common/base-template.html' %}
+{% block content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h3>{{ title }}</h3>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="form" name="form" role="form" action="/admin/cookbook_manage/" method="post" enctype="multipart/form-data"
+                          class="form-horizontal form-groups-bordered">
+                        {% csrf_token %}
+
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">名称</label>
+                            <div class="col-sm-6">
+                                <input datatype="*" type="text" class="form-control" name="value" placeholder="名称" value="{{ cookbook.name }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">类型</label>
+                            <div class="col-sm-3">
+                                <input type="hidden" class="form-control" name="id" value="{{ cookbook.id }}">
+                                <select name="factor_type_id" class="form-control">
+                                    {% for food_type in food_types %}
+                                        <option value="{{ food_type.id }}">{{ food_type.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">价格</label>
+                            <div class="col-sm-6">
+                                <input datatype="*" type="text" class="form-control" name="value" placeholder="价格" value="{{ cookbook.price }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">描述</label>
+                            <div class="col-sm-6">
+                                <input datatype="*" type="text" class="form-control" name="value" placeholder="描述" value="{{ cookbook.desp }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">图片</label>
+                            <div class="col-sm-6">
+                                <input type="button" class="btn btn-orange form-control" value="点击" onclick="beforeImport('../pic_import')">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-5">
+                                <button type="button" class="btn btn-info">提交</button>
+                                <button type="reset" class="btn btn-danger">撤销</button>
+                                <button type="button" class="btn btn-success" onclick="javascript:history.back();">返回</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="/static/js/django-ajax.js" ></script>
+
+    <script type="text/javascript" src="/static/js/report.js" ></script>
+
+    <script type="text/javascript">
+        $(function(){
+
+        });
+    </script>
+{% endblock %}

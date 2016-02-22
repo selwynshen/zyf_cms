@@ -1,0 +1,243 @@
+# Django settings for CarbonEmission project.
+#coding=utf-8
+import os
+
+PROJECT_DIR = os.path.dirname(os.path.dirname(__file__)).replace('\\','/')
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+ADMINS = (
+    # ('Your Name', 'your_email@example.com'),
+)
+
+MANAGERS = ADMINS
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zyf_cms',
+        'USER': 'root',
+        'PASSWORD': 'selwyn',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        }
+}
+
+# Hosts/domain names that are valid for this site; required if DEBUG is False
+# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = []
+
+# Local time zone for this installation. Choices can be found here:
+# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
+# although not all choices may be available on all operating systems.
+# In a Windows environment this must be set to your system time zone.
+TIME_ZONE = 'Asia/Shanghai'
+
+LANGUAGE_CODE = 'en-us'
+
+SITE_ID = 1
+
+# If you set this to False, Django will make some optimizations so as not
+# to load the internationalization machinery.
+USE_I18N = True
+
+# If you set this to False, Django will not format dates, numbers and
+# calendars according to the current locale.
+USE_L10N = True
+
+# If you set this to False, Django will not use timezone-aware datetimes.
+USE_TZ = True
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/var/www/example.com/media/"
+MEDIA_ROOT = ''
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+MEDIA_URL = '/media/'
+
+# Absolute path to the directory static files should be collected to.
+# Don't put anything in this directory yourself; store your static files
+# in apps' "static/" subdirectories and in STATICFILES_DIRS.
+# Example: "/var/www/example.com/static/"
+STATIC_ROOT = ''
+
+# URL prefix for static files.
+# Example: "http://example.com/static/", "http://static.example.com/"
+STATIC_URL = '/static/'
+
+# Additional locations of static files
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR,'static/'),
+)
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = '6ybmpp@fv&*1nb%c3b$bvb(5d*r2jxql5fqc2pa^h8f@=8nkjs'
+HASH_KEY = '6xydjkfjakodl8dd71dfda2k1kj2k'
+HASHER='sha1'
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+
+    'pagination.middleware.PaginationMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+)
+
+ROOT_URLCONF = 'zyf_cms.urls'
+
+WSGI_APPLICATION = 'zyf_cms.wsgi.application'
+
+
+TEMPLATE_DIRS = (os.path.join(PROJECT_DIR,'templates/'),)
+
+
+INSTALLED_APPS = (
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # 'django.contrib.admindocs',
+    'zyf_cms',
+    'pagination',
+    'admin',
+
+)
+
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+
+# A sample logging configuration. The only tangible logging
+# performed by this configuration is to send an email to
+# the site admins on every HTTP 500 error when DEBUG=False.
+# See http://docs.djangoproject.com/en/dev/topics/logging for
+# more details on how to customize your logging configuration.
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '%(levelname)s %(name)s %(asctime)s %(message)s'
+        },
+        'verbose': {
+            'format': '%(levelname)s %(name)s %(asctime)s %(pathname)s %(module)s %(lineno)d %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'django_request':{
+            'format': '%(levelname)s %(asctime)s %(pathname)s %(module)s %(lineno)d %(message)s status_code:%(status_code)d',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'django_db_backends':{
+            'format': '%(levelname)s %(asctime)s %(pathname)s %(module)s %(lineno)d %(message)s duration:%(duration).3f sql:%(sql)s params:%(params)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        },
+    'handlers': {
+        'null': {
+            'level':'DEBUG',
+            'class':'django.utils.log.NullHandler',
+        },
+        'console':{
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'custom_log_file':{
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(PROJECT_DIR, 'logs/zyf_cms.log'),#you need define your VAR_ROOT variable that points to your project path,and mkdir a logs directory in your project root path.
+            'backupCount': 5,
+            'maxBytes': '16777216', # 16megabytes(16M)
+            'formatter': 'verbose'
+        },
+        'django_request_logfile':{
+            'level': 'WARNING',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(PROJECT_DIR, 'logs/zyf_cms_request_logfile.log'),#you need define your VAR_ROOT variable that points to your project path,and mkdir a logs directory in your project root path.
+            'backupCount': 5,
+            'maxBytes': '16777216', # 16megabytes(16M)
+            'formatter': 'django_request'
+        },
+        'django_db_backends_logfile':{
+            'level': 'WARNING',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(PROJECT_DIR, 'logs/zyf_cms_db_backends_logfile.log'),#you need define your VAR_ROOT variable that points to your project path,and mkdir a logs directory in your project root path.
+            'backupCount': 5,
+            'maxBytes': '16777216', # 16megabytes(16M)
+            'formatter': 'django_db_backends'
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+        'django.request': {
+            'handlers': ['mail_admins','django_request_logfile'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        'django.db.backends': {
+            'handlers': ['django_db_backends_logfile',],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        'customapp': {
+        #then you can change the level to control your custom app whether to output the debug infomation
+              'handlers': ['console'],
+              'level': 'DEBUG',
+              'propagate': False,
+        },
+        'customapp.engine': {
+        #then you can change the level to control your custom app whether to output the debug infomation
+             'handlers': ['custom_log_file'],
+             'level': 'DEBUG',
+             'propagate': True,
+         },
+    },
+}
+
+LOGIN_URL='/'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.request",
+    'django.contrib.auth.context_processors.auth',
+)
+
+
+#控制多用户
+allowMultiUser = False

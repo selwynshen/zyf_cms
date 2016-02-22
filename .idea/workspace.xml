@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" name="Default" comment="" />
+    <ignored path="zyf_cms.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448781209692" ignored="false" />
+    <file path="/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448793252338" ignored="false" />
+    <file path="/django.po" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1398822066479" ignored="false" />
+    <file path="/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448784335382" ignored="false" />
+    <file path="/home.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1398764046396" ignored="false" />
+    <file path="E:/pjs/Test/Test/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399187644907" ignored="false" />
+    <file path="/Dummy.txt" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406104759621" ignored="false" />
+    <file path="$PROJECT_DIR$/../tianhui/tianhui/tianhui/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399185372583" ignored="false" />
+    <file path="E:/pjs/Test/Test/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399190336951" ignored="false" />
+    <file path="E:/pjs/Test/static/team4us/extapp/app/view/LoginWindow.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399186972244" ignored="false" />
+    <file path="E:/pjs/Test/static/team4us/extapp/app/view/Team4USViewport.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399186979227" ignored="false" />
+    <file path="/a.dummy" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417076589379" ignored="false" />
+    <file path="E:/pjs/Test/media/css/index.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399187061095" ignored="false" />
+    <file path="E:/pjs/Test/captcha/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399191423204" ignored="false" />
+    <file path="D:/data-console/data_console/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399602104197" ignored="false" />
+    <file path="D:/data-console/user_info/__init__.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399604383446" ignored="false" />
+    <file path="D:/data-console/user_info/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399609724845" ignored="false" />
+    <file path="D:/data-console/data_center/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399864301553" ignored="false" />
+    <file path="D:/data-console/user_info/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399609710130" ignored="false" />
+    <file path="D:/Daas/daas/hive.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399622374533" ignored="false" />
+    <file path="/hive.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399622374533" ignored="false" />
+    <file path="D:/Daas/tests.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399619279019" ignored="false" />
+    <file path="/tests.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399619279019" ignored="false" />
+    <file path="D:/data-console/data_console/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399625255991" ignored="false" />
+    <file path="D:/data-console/data_console/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399625261125" ignored="false" />
+    <file path="D:/data-console/template/data_center/maper_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399868115885" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/GoodsRecommend/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879680395" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/GoodsRecommend/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399881397518" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/GoodsRecommend/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399896164547" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/admin/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399872395530" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/admin/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399871942857" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898591464" ignored="false" />
+    <file path="/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406526660918" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/admin/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399871958141" ignored="false" />
+    <file path="/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406525730738" ignored="false" />
+    <file path="/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405665679416" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/admin/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399867695114" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399868329541" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/admin/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399872624321" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/GoodsRecommend/models.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399884244278" ignored="false" />
+    <file path="/models.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448783194760" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898254832" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/search.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399897831415" ignored="false" />
+    <file path="/search.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399897829120" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/example.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399894466014" ignored="false" />
+    <file path="/example.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399878992668" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/cpbtreebuilder.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399878998279" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/drawtree.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879000292" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/fpnode.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879004391" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/fptreemining.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399894161736" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/node.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879009050" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/sample.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879011366" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/treebuilder.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879014119" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/fp_tree/util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399879016653" ignored="false" />
+    <file path="/fptreemining.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399894160959" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/cart.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399886252849" ignored="false" />
+    <file path="/cart.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399886252426" ignored="false" />
+    <file path="D:/container_daas/container_daas/container_file.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399887781494" ignored="false" />
+    <file path="/container_file.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399887609568" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/templates/search_result.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898373036" ignored="false" />
+    <file path="/search_result.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898098417" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoodsRecommend/static/css/capture.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898437672" ignored="false" />
+    <file path="/capture.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898185987" ignored="false" />
+    <file path="$USER_HOME$/PycharmProjects/my_project/my_project/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400115052069" ignored="false" />
+    <file path="/tip.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399959528381" ignored="false" />
+    <file path="/user_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416981009750" ignored="false" />
+    <file path="/group_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400838052747" ignored="false" />
+    <file path="/permission_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399963158592" ignored="false" />
+    <file path="/permission_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399963449154" ignored="false" />
+    <file path="/user_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416981172012" ignored="false" />
+    <file path="/auth.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400048904105" ignored="false" />
+    <file path="/user_delete.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400051203965" ignored="false" />
+    <file path="/user_update.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417055151463" ignored="false" />
+    <file path="/group_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400910312059" ignored="false" />
+    <file path="/group_delete.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400072889660" ignored="false" />
+    <file path="$USER_HOME$/PycharmProjects/my_project/books/models.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400115102894" ignored="false" />
+    <file path="/userAdd.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400119723569" ignored="false" />
+    <file path="/base-iframe.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448807567521" ignored="false" />
+    <file path="/index-iframe.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400834352373" ignored="false" />
+    <file path="/iframe-adapter.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400836394989" ignored="false" />
+    <file path="/base-template.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417052834108" ignored="false" />
+    <file path="/user_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416468110514" ignored="false" />
+    <file path="/role_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400912340619" ignored="false" />
+    <file path="/xlrd_util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448780530117" ignored="false" />
+    <file path="/fragment.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418135683962" ignored="false" />
+    <file path="/accesspermission.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416470008887" ignored="false" />
+    <file path="/region_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416535761069" ignored="false" />
+    <file path="/region_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401150951635" ignored="false" />
+    <file path="/get_groups.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401155759393" ignored="false" />
+    <file path="/get_regions.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401259758900" ignored="false" />
+    <file path="/selector.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405405545268" ignored="false" />
+    <file path="/error.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406192832728" ignored="false" />
+    <file path="/encrypt_helper.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401167591399" ignored="false" />
+    <file path="/service.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401170992490" ignored="false" />
+    <file path="/get_all_regions.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401255676860" ignored="false" />
+    <file path="/get_single_region.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401190221603" ignored="false" />
+    <file path="/django-ajax.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401242986579" ignored="false" />
+    <file path="/data_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401777148053" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/storeList.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401861316901" ignored="false" />
+    <file path="D:/dingcan/dingcan/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401947305810" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401769950649" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/addressManage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401861316901" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/menu.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401861316901" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/addressUpdate.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401953441750" ignored="false" />
+    <file path="D:/dingcan/dingcan/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401765150058" ignored="false" />
+    <file path="/menu.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401765316833" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/welcome.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401763050180" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/storeDetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401763125784" ignored="false" />
+    <file path="D:/dingcan/dingcan/medias/resources/css/menu.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401947956329" ignored="false" />
+    <file path="/menu.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401947938922" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/orderDetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401769950649" ignored="false" />
+    <file path="/detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401772538239" ignored="false" />
+    <file path="/data_update.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401773165392" ignored="false" />
+    <file path="/actions.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456140453165" ignored="false" />
+    <file path="/spa_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416795218403" ignored="false" />
+    <file path="/pa_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417657824080" ignored="false" />
+    <file path="D:/dingcan/dingcan/medias/resources/js/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401953516645" ignored="false" />
+    <file path="/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417755463764" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/userOrders.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401789040258" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/menu - 副本.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401789131879" ignored="false" />
+    <file path="/ha_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417598980325" ignored="false" />
+    <file path="/ha_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418027875931" ignored="false" />
+    <file path="/spa_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416795385380" ignored="false" />
+    <file path="/spa_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416795021955" ignored="false" />
+    <file path="/style.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418816089422" ignored="false" />
+    <file path="D:/dingcan/dingcan/templates/confirmOrder.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401861316901" ignored="false" />
+    <file path="D:/dingcan/dingcan/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401947305810" ignored="false" />
+    <file path="/ha_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416894872959" ignored="false" />
+    <file path="/total_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417754075822" ignored="false" />
+    <file path="/total_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401876099161" ignored="false" />
+    <file path="/total_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401876345049" ignored="false" />
+    <file path="/addressUpdate.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401953443050" ignored="false" />
+    <file path="D:/lawyer/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401955630967" ignored="false" />
+    <file path="D:/lawyer/css/style.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402017468470" ignored="false" />
+    <file path="D:/lawyer/lawyerper.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402017501336" ignored="false" />
+    <file path="/lawyerper.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402017488227" ignored="false" />
+    <file path="D:/lawyer/feature - 副本.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402018087455" ignored="false" />
+    <file path="/feature - 副本.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402018086329" ignored="false" />
+    <file path="D:/lawyer1/lawyer.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044846268" ignored="false" />
+    <file path="/lawyer.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402018378698" ignored="false" />
+    <file path="D:/lawyer1/css/style.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402046915155" ignored="false" />
+    <file path="D:/lawyer1/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044855694" ignored="false" />
+    <file path="D:/lawyer1/js/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044424321" ignored="false" />
+    <file path="D:/lawyer1/casedetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402047308461" ignored="false" />
+    <file path="D:/lawyer1/cases.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044809852" ignored="false" />
+    <file path="D:/lawyer1/contactusGuide.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044818407" ignored="false" />
+    <file path="D:/lawyer1/contactusProposal.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044825885" ignored="false" />
+    <file path="D:/lawyer1/featurePatent.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044834332" ignored="false" />
+    <file path="D:/lawyer1/news.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044862653" ignored="false" />
+    <file path="D:/lawyer1/newsdetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044868925" ignored="false" />
+    <file path="D:/lawyer1/profileDevelpment.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402044883308" ignored="false" />
+    <file path="/casedetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1402047302204" ignored="false" />
+    <file path="D:/metal/metal/templates/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404365489282" ignored="false" />
+    <file path="D:/metal/metal/static/css/style.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404357368050" ignored="false" />
+    <file path="D:/metal/metal/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404365262816" ignored="false" />
+    <file path="D:/metal/metalpollution/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404365358093" ignored="false" />
+    <file path="D:/metal/metal/templates/data-manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404367849332" ignored="false" />
+    <file path="D:/metal/metal/templates/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404365894908" ignored="false" />
+    <file path="/data-manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1404367757093" ignored="false" />
+    <file path="/pa_output_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683158585" ignored="false" />
+    <file path="/column-basic.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405920889149" ignored="false" />
+    <file path="/delete_records.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405062093788" ignored="false" />
+    <file path="/report.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417675382282" ignored="false" />
+    <file path="$PROJECT_DIR$/../修珍/mission/css/bootstrap-override.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405303702927" ignored="false" />
+    <file path="$PROJECT_DIR$/../修珍/mission/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405304176331" ignored="false" />
+    <file path="/pa_output_origin_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405668019676" ignored="false" />
+    <file path="/spa_do_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683228154" ignored="false" />
+    <file path="/ha_do_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416825539655" ignored="false" />
+    <file path="/ha_output_origin_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683111607" ignored="false" />
+    <file path="D:/ess/templates/supervisor/backwork_report_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/templates/common/base-template.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/supervisor/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/templates/supervisor/check_report_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/supervisor/actions.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/ess/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="D:/ess/supervisor/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405649864300" ignored="false" />
+    <file path="/spa_analysis_report.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405667457136" ignored="false" />
+    <file path="/spa_do_category_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405922839615" ignored="false" />
+    <file path="/chart-util.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418008311642" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/templates/include/more_aside.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/settings.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/teacher/templates/express_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/teacher/templates/express_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/teacher/templates/teacher_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/news/templates/express_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/teacher/templates/teacher_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/news/templates/express_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/news/templates/observe_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/news/templates/observe_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/activity/templates/notice_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/activity/templates/notice_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/templates/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117296304" ignored="false" />
+    <file path="D:/zmtsite/activity/templates/record_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/activity/templates/record_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/course/templates/course.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/templates/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/dreamtown/templates/about_dreamtown.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/student/templates/experience_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/dreamtown/templates/contact_us.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/student/templates/experience_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/dreamtown/urls.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/templates/include/article_list_item.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/templates/include/image_article_list_item.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928242576" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/medias/resources/css/style.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406104855760" ignored="false" />
+    <file path="/more_aside.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405928581873" ignored="false" />
+    <file path="/course.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405933296079" ignored="false" />
+    <file path="D:/zmtsite/zmtsite/medias/resources/js/custom.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405936270240" ignored="false" />
+    <file path="C:/Python27/Lib/site-packages/django/core/urlresolvers.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405994624105" ignored="false" />
+    <file path="C:/Python27/Lib/site-packages/django/template/defaulttags.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405994624105" ignored="false" />
+    <file path="C:/Python27/Lib/site-packages/django/db/models/manager.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405994624105" ignored="false" />
+    <file path="C:/Python27/Lib/site-packages/django/db/models/fields/__init__.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405994624105" ignored="false" />
+    <file path="/spa_total_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405995319328" ignored="false" />
+    <file path="/ha_singleyear_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405995401157" ignored="false" />
+    <file path="/ha_category_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1405995434119" ignored="false" />
+    <file path="D:/zmtsite/student/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/teacher/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/plan/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/activity/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="D:/zmtsite/news/views.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406117175308" ignored="false" />
+    <file path="/common_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448793061475" ignored="false" />
+    <file path="/404.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406192293422" ignored="false" />
+    <file path="/singlepublicarchitecture_report.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406254255885" ignored="false" />
+    <file path="/housingbuilding_report.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406255562928" ignored="false" />
+    <file path="/common_models.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448782352433" ignored="false" />
+    <file path="/q.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406526036274" ignored="false" />
+    <file path="/enterprise_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417002155279" ignored="false" />
+    <file path="/industry_pro_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406529143018" ignored="false" />
+    <file path="/industry_pro_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406529153035" ignored="false" />
+    <file path="/industry_pro_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683215508" ignored="false" />
+    <file path="/spa_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416879028423" ignored="false" />
+    <file path="/ha_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006717394" ignored="false" />
+    <file path="/fgw_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406608551021" ignored="false" />
+    <file path="/gyqy_total_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406609336358" ignored="false" />
+    <file path="/gyqy_total_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406609707537" ignored="false" />
+    <file path="/gyqy_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406609814300" ignored="false" />
+    <file path="/gyqy_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406609844271" ignored="false" />
+    <file path="/gyqy_do_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406610206122" ignored="false" />
+    <file path="/ha_do_category_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683194326" ignored="false" />
+    <file path="/pa_do_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683131618" ignored="false" />
+    <file path="/pa_do_category_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683143923" ignored="false" />
+    <file path="/pa_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683150770" ignored="false" />
+    <file path="/idc_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406683209320" ignored="false" />
+    <file path="/pa_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006808656" ignored="false" />
+    <file path="/spa_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416884359812" ignored="false" />
+    <file path="/base_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418114483401" ignored="false" />
+    <file path="/validator.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417410595529" ignored="false" />
+    <file path="/format_helper.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415683461753" ignored="false" />
+    <file path="/utilities.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417570514754" ignored="false" />
+    <file path="/analysis_actions.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418156001968" ignored="false" />
+    <file path="/easy_input.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415777159412" ignored="false" />
+    <file path="/user_verify_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415770847948" ignored="false" />
+    <file path="/user_manager.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417572387340" ignored="false" />
+    <file path="/user_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418817786101" ignored="false" />
+    <file path="/pne_singleyear_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415787339495" ignored="false" />
+    <file path="/total_do_intensity_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415787354737" ignored="false" />
+    <file path="/pa_do_analysis_preview.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415846834764" ignored="false" />
+    <file path="/gyqy_total_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1415859516990" ignored="false" />
+    <file path="/common_tools.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448780339423" ignored="false" />
+    <file path="/decimal_to_power.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416193010088" ignored="false" />
+    <file path="/import_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416893097869" ignored="false" />
+    <file path="/importor.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418200725721" ignored="false" />
+    <file path="/pne_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418195558036" ignored="false" />
+    <file path="/xlwt_util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416813269300" ignored="false" />
+    <file path="/hidden_form.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416215609913" ignored="false" />
+    <file path="/pne_do_singleyear_category_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416280239231" ignored="false" />
+    <file path="/idc_do_analysis_single.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416548405878" ignored="false" />
+    <file path="/overwrite.css" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416477466548" ignored="false" />
+    <file path="/idc_do_category_analysis_single.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417598150887" ignored="false" />
+    <file path="/validate_overwrite.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416538599218" ignored="false" />
+    <file path="/gdp_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416552551033" ignored="false" />
+    <file path="/gdp_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416552561544" ignored="false" />
+    <file path="/env_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416561401847" ignored="false" />
+    <file path="/wwr_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416561507620" ignored="false" />
+    <file path="/factor_util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416808321790" ignored="false" />
+    <file path="/logging_util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416807370582" ignored="false" />
+    <file path="/pvi_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416812342124" ignored="false" />
+    <file path="/pvi_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416813731075" ignored="false" />
+    <file path="/pvi_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416816093841" ignored="false" />
+    <file path="/register.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418891370030" ignored="false" />
+    <file path="/map.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416818114831" ignored="false" />
+    <file path="/pa_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416820507080" ignored="false" />
+    <file path="/ha_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006710356" ignored="false" />
+    <file path="/custom_tags.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418207444394" ignored="false" />
+    <file path="/carbon_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416914272921" ignored="false" />
+    <file path="/carbon_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416905193661" ignored="false" />
+    <file path="/task_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418893843667" ignored="false" />
+    <file path="/task_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416906316278" ignored="false" />
+    <file path="/gov_do_carbon_reduction_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418153448994" ignored="false" />
+    <file path="/government_reduction_total_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418135926932" ignored="false" />
+    <file path="/gov_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416919356152" ignored="false" />
+    <file path="/task_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416913365360" ignored="false" />
+    <file path="/gov_do_carbon_reduction_analysis_preview.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416919130088" ignored="false" />
+    <file path="/wwr_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417676243802" ignored="false" />
+    <file path="/indrcaginfo_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417002291743" ignored="false" />
+    <file path="/indrcaginfo_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417002357462" ignored="false" />
+    <file path="/indrcaginfo_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417002418410" ignored="false" />
+    <file path="/fore_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417002999510" ignored="false" />
+    <file path="/fore_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006364232" ignored="false" />
+    <file path="/pa_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006815081" ignored="false" />
+    <file path="/traffic_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006867905" ignored="false" />
+    <file path="$PROJECT_DIR$/templates/forestry/forestry_do_category_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006940202" ignored="false" />
+    <file path="$PROJECT_DIR$/templates/forestry/forestry_do_category_analysis_preview.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006940202" ignored="false" />
+    <file path="/gdp_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417009668097" ignored="false" />
+    <file path="/Validform_v5.3.2_custom_min.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417052879889" ignored="false" />
+    <file path="/*.regexp" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1419231943508" ignored="false" />
+    <file path="/fixedfactor_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417089212558" ignored="false" />
+    <file path="/gwpfactor_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417090353766" ignored="false" />
+    <file path="/ratefactor_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417090341670" ignored="false" />
+    <file path="/gwpfactor_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417089628791" ignored="false" />
+    <file path="/factorgyqy_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417090695198" ignored="false" />
+    <file path="/factorgyqy_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417090792774" ignored="false" />
+    <file path="/factorfixed_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417091005758" ignored="false" />
+    <file path="/fixedfactor_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417091169311" ignored="false" />
+    <file path="/arcfactor_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417091587406" ignored="false" />
+    <file path="/arcfactor_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448804702711" ignored="false" />
+    <file path="/factor_list_traffic.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417091782022" ignored="false" />
+    <file path="/factor_manage_traffic.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417091948471" ignored="false" />
+    <file path="/factor_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417092145839" ignored="false" />
+    <file path="/factor_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417092308566" ignored="false" />
+    <file path="/ratefactor_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417092385518" ignored="false" />
+    <file path="/carbon_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417415765402" ignored="false" />
+    <file path="/tab-operation.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417675977586" ignored="false" />
+    <file path="/env_test_list_new.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417676679370" ignored="false" />
+    <file path="/env_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417677031948" ignored="false" />
+    <file path="$PROJECT_DIR$/templates/traffic/base-iframe.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417684177961" ignored="false" />
+    <file path="$PROJECT_DIR$/templates/forestry/base-iframe.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417684177961" ignored="false" />
+    <file path="/idc_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417688525041" ignored="false" />
+    <file path="/pne_verify_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417688744142" ignored="false" />
+    <file path="/analysis_action.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418109608011" ignored="false" />
+    <file path="/wwr_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417756626689" ignored="false" />
+    <file path="/industrywholesituation_report.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417753766333" ignored="false" />
+    <file path="/industrydeptconsume_report.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417753781253" ignored="false" />
+    <file path="/idc_tab_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417754628281" ignored="false" />
+    <file path="/government_do_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418132254139" ignored="false" />
+    <file path="/government_total_report_analysis.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418207465544" ignored="false" />
+    <file path="/government_do_analysis_by_gdp.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418135173795" ignored="false" />
+    <file path="/government_do_carbon_analysis_by_slip_preview.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418135894851" ignored="false" />
+    <file path="/government_do_carbon_analysis_by_slip.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418153401308" ignored="false" />
+    <file path="/register.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1418792670189" ignored="false" />
+    <file path="/manage.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448367817320" ignored="false" />
+    <file path="/cookbook_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448793333232" ignored="false" />
+    <file path="/cookbook_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448809512399" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyf_cms/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="31" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zyf_cms/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="30" selection-start="471" selection-end="471" vertical-scroll-proportion="0.53846157">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/zyf_cms/settings.py" />
+        <option value="$PROJECT_DIR$/zyf_cms/views.py" />
+        <option value="$PROJECT_DIR$/admin/models.py" />
+        <option value="$PROJECT_DIR$/zyf_cms/models.py" />
+        <option value="$PROJECT_DIR$/common/common_models.py" />
+        <option value="$PROJECT_DIR$/common/common_action.py" />
+        <option value="$PROJECT_DIR$/admin/views.py" />
+        <option value="$PROJECT_DIR$/templates/admin/cookbook_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/arcfactor_manage.html" />
+        <option value="$PROJECT_DIR$/templates/admin/base-iframe.html" />
+        <option value="$PROJECT_DIR$/ajax/urls.py" />
+        <option value="$PROJECT_DIR$/ajax/views.py" />
+        <option value="$PROJECT_DIR$/templates/admin/cookbook_manage.html" />
+        <option value="$PROJECT_DIR$/zyf_cms/models.py" />
+        <option value="$PROJECT_DIR$/admin/actions.py" />
+        <option value="$PROJECT_DIR$/admin/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1381" />
+    <option name="height" value="747" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyf_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjData\Pycharm\zyf_cms\templates\admin" />
+      <recent name="D:\zyf_cms\templates\agriculture" />
+      <recent name="D:\zyf_cms\agriculture_department" />
+      <recent name="D:\zyf_cms\templates\public_architecture" />
+      <recent name="D:\zyf_cms\templates\fagaiwei" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\svn_pro\zyf_cms\zyf_cms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.zyf_cms">
+    <configuration default="false" name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zyf_cms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zyf_cms/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="xlrd_util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/xlrd_util.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonCover" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonCover" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="encrypt_helper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/encrypt_helper.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/agriculture_department" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/agriculture_department/views.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="service" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/service.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="zyf_cms" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="zyf_cms.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:/Python27/python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8050" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django server.zyf_cms" />
+      <item index="1" class="java.lang.String" itemvalue="Python.settings" />
+      <item index="2" class="java.lang.String" itemvalue="Python.xlrd_util" />
+      <item index="3" class="java.lang.String" itemvalue="Python.encrypt_helper" />
+      <item index="4" class="java.lang.String" itemvalue="Python.views" />
+      <item index="5" class="java.lang.String" itemvalue="Python.service" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.service" />
+        <item index="1" class="java.lang.String" itemvalue="Python.views" />
+        <item index="2" class="java.lang.String" itemvalue="Python.encrypt_helper" />
+        <item index="3" class="java.lang.String" itemvalue="Python.settings" />
+        <item index="4" class="java.lang.String" itemvalue="Python.xlrd_util" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\Selwyn\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" name="Default" comment="" />
+      <created>1398751974633</created>
+      <updated>1398751974633</updated>
+    </task>
+    <task id="LOCAL-00001" summary="修改为iframe模版页面;导入功能初步实现&#10;提交人:沈贵斌11">
+      <created>1401067328160</created>
+      <updated>1401067328160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改为iframe模版页面;导入功能初步实现&#10;提交人:沈贵斌11">
+      <created>1401067346113</created>
+      <updated>1401067346113</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改为iframe模版页面;导入功能初步实现&#10;提交人:沈贵斌11">
+      <created>1401177278112</created>
+      <updated>1401177278112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1381" height="747" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21150278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2541744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.53406996" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.590985" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24515648" sideWeight="0.68654174" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31345826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.39146566" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03577513" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25553662" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25041735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改为iframe模版页面;导入功能初步实现&#10;提交人:沈贵斌11" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="修改为iframe模版页面;导入功能初步实现&#10;提交人:沈贵斌11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/agriculture_department/analysis_action.py</url>
+          <line>445</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="272" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/js/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-8.2" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="162" selection-end="162" vertical-scroll-proportion="0.37956205" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="440" selection-end="440" vertical-scroll-proportion="0.06326034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/cookbook_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="259" selection-end="259" vertical-scroll-proportion="0.57300276" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="362" selection-end="362" vertical-scroll-proportion="-0.39037433" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="452" column="0" selection-start="17658" selection-end="17658" vertical-scroll-proportion="0.33061224" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="5153" selection-end="5153" vertical-scroll-proportion="0.33189654" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="244" selection-end="248" vertical-scroll-proportion="0.3931947" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.19659735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.14744802" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.34404537" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="451" selection-end="451" vertical-scroll-proportion="1.1085272" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="471" selection-end="471" vertical-scroll-proportion="0.53846157">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

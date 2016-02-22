@@ -1,0 +1,30 @@
+<form name="form" action="{{ import_url }}" method="post" enctype="multipart/form-data">
+
+    <input id="import_file" name="import_file" type="file" style="display:none;" onchange="textChange()">
+    {% csrf_token %}
+<div>
+    <div style="width:80%;float:left;">
+        <label style="float: left;line-height: 32px;">选择文件：</label>
+        <input type="text" readonly="true" id="file_name" name="file_name" class="form-control" style="float:left;width:80%;">
+        <img onclick="fileImport()" src="/static/image/folder.png" style="position: relative;left: -30px;top: 3px;">
+    </div>
+    <input id="btnImport" type="button" class="btn btn-green" value="导入">
+</div>
+
+</form>
+
+<script type="text/javascript">
+    function fileImport()
+    {
+        $('#import_file').trigger('click');
+    }
+    function textChange(){
+        $('#file_name').val($('#import_file').val());
+    }
+
+    $(function(){
+        $("#btnImport").click(function(){
+            uploadFile('{{ import_url }}');
+        });
+    });
+</script>
