@@ -5,13 +5,147 @@ import datetime
 
 from common import format_helper
 from common.common_models import BaseModel
+from django.contrib.auth.models import User, Group
+
+class Shop(BaseModel):
+    name = models.CharField(max_length=200)
+    address = models.CharField(max_length=500)
+    contact_info = models.CharField(max_length=100)
+    phone = models.CharField(max_length=50)
+    #province = models.CharField(max_length=50)
+    #city = models.CharField(max_length=50)
+    leader_id = models.IntegerField(blank=True, null=True)
+
+    group = models.ForeignKey(Group)
+
+    class Meta:
+        db_table = 'shop'
+
+#用户信息
+class UserInfo(BaseModel):
+    user = models.ForeignKey(User)
+    shop = models.ForeignKey(Shop)
+
+    real_name = models.CharField(max_length=200)
+
+    class Meta:
+        db_table = 'user_info'
 
 
+#病例
+class IllCase(BaseModel):
+    case_name = models.CharField(max_length=200)
+
+    shop = models.ForeignKey(Shop)
+
+    user_info = models.ForeignKey(UserInfo)
 
 
+    name = models.CharField(max_length=200)
+    gender = models.IntegerField(default=1)
+    age = models.IntegerField(blank=True, null=True)
 
 
+    xuetang = models.CharField(max_length=50)
+    xueya = models.CharField(max_length=50)
+
+    shiduan = models.CharField(max_length=50)
+    #0:未知   1:是  2:否  3：略微
+    pilaogan = models.IntegerField(max_length=2)
+
+    xiaobian_baitian = models.IntegerField(max_length=5)
+    xiaobian_wanshang = models.IntegerField(max_length=5)
+    #0:未知 1:多 2:少 3:一般 4：无
+    paomo = models.IntegerField(max_length=2)
+    #0:未知 1:有 2:无
+    zhuotonggan = models.IntegerField(max_length=2)
+    #0:未知 1:清 2:浑浊 3： 浅黄 4： 深黄
+    xiaobian_yanse = models.IntegerField(max_length=2)
+    #0:未知 1:失眠多梦不易入睡  2:做梦醒来就忘不困 3： 多梦醒来精神疲劳 4： 有凌晨醒的现象
+    shuimian_zhiliang = models.IntegerField(max_length=2)
+
+    shuimian_shijian_kaishi = models.IntegerField(max_length=2)
+
+    shuimian_shijian_jieshu = models.IntegerField(max_length=2)
+    #0:未知 1:肥大  2:瘦小 3： 有齿痕 4： 舌中有裂纹
+    shezhi = models.CharField(max_length=50)
+    #0:未知 1:是  2:否
+    chiheng_jianqing = models.IntegerField(max_length=2)
+    #0:未知 1:红润  2:绛紫 3： 淡白 4： 暗红 5： 青色 6： 舌周围有红色圆点
+    shese = models.IntegerField(max_length=2)
+    #0:未知 1:黄腻  2:白苔 3： 黑苔 4： 灰苔 5： 苔薄 6： 苔厚 7： 润 8：燥 9：腐 10： 腻
+    shetai = models.CharField(max_length=50)
+
+    #0:未知 1:有血丝 2:有黄斑 3： 干涩 4： 模糊 5： 不适
+    yanjing = models.CharField(max_length=50)
+    yanjing_beizhu = models.CharField(max_length=200)
+
+    #0:未知 1： 正常 2:有麻木感 3:胀感 4： 冰凉5： 疼痛 6： 刺痛 7： 抽搐
+    tuijiao_qingkuang = models.CharField(max_length=50)
+    tuijiao_buwei = models.CharField(max_length=200)
+
+    jiangtangyao_mingcheng = models.CharField(max_length=200)
+    jiangtangyao_jiliang = models.CharField(max_length=200)
+    #0:未知 1： 正常 2:减药 3:停用
+    jiangtangyao_zhuangtai = models.IntegerField(max_length=2)
+
+    yidaosu__mingcheng = models.CharField(max_length=200)
+    yidaosu_jiliang = models.CharField(max_length=200)
+    #0:未知 1：早 2:中 3:晚 4：睡前
+    yidaosu_shiyong_qingkuang = models.IntegerField(max_length=2)
+    #0:未知 1： 正常 2:减药 3:停用
+    yidaosu_zhuangtai = models.IntegerField(max_length=2)
+
+    jiangyayao_mingcheng = models.CharField(max_length=200)
+    jiangyayao_jiliang = models.CharField(max_length=200)
+    #0:未知 1： 正常 2:减药 3:停用
+    jiangyayao_zhuangtai = models.IntegerField(max_length=2)
+
+    jiangzhiyao_mingcheng = models.CharField(max_length=200)
+    jiangzhiyao_jiliang = models.CharField(max_length=200)
+    #0:未知 1： 正常 2:减药 3:停用
+    jiangzhiyao_zhuangtai = models.IntegerField(max_length=2)
+
+    #0:未知 1： 1号 2:2号 3:中号
+    minyuecha = models.IntegerField(max_length=2)
+    minyuecha_yinyong_qingkuang = models.CharField(max_length=200)
+
+    #0:未知 1： 1号 2:2号 3:3号
+    wuzisan = models.IntegerField(max_length=2)
+    wuzisan_yitian_cishu = models.IntegerField(max_length=5)
+    wuzisan_yici = models.IntegerField(max_length=5)
+
+    #0:未知 1： 会阴 2:关元 3:涌泉
+    yuantangtie_tiefu_xuewei = models.IntegerField(max_length=2)
+
+    #0:未知 1： 金匮肾气丸 2:六味地黄丸 3:知柏地黄丸 4： 人参归脾丸 5： 肾源
+    fuzhuyaowu = models.CharField(max_length=50)
+    #0:未知 1： 正常剂量 2:翻倍剂量
+    fuzhuyaowu_fuyong_qingkuang = models.IntegerField(max_length=2)
+
+    #0:未知 1： 是 2:否
+    zhuixun_yuantang_shipu = models.IntegerField(max_length=2)
+    zaocan_qingkuang = models.CharField(max_length=500)
+    wucan_qingkuang = models.CharField(max_length=500)
+    wancan_qingkuang = models.CharField(max_length=500)
+
+    #0:未知 1： 腹部推拿 2:经络疏通
+    yuantangfa = models.IntegerField(max_length=2)
+    yuantangshu_paojiao_wendu = models.IntegerField(max_length=5)
+    yuantangshu_shijian = models.IntegerField(max_length=5)
+    #0:未知 1： 不出汗 2:微汗 3： 正常 4： 大汗 5: 禁用
+    yuantangshu_chuhan_qingkuang = models.IntegerField(max_length=5)
+
+    yuantangguang_chuang_wendu = models.IntegerField(max_length=5)
+    yuantangguang_tan_wendu= models.IntegerField(max_length=5)
+    yuantangguang_shijian = models.IntegerField(max_length=5)
+    #0:未知 1： 腿 2：肚脐关元处 3： 背部 4： 胸十二椎以下
+    yuantangguang_buwei = models.CharField(max_length=50)
+    #0:未知 1： 不出汗 2:微汗 3： 正常 4： 大汗 5: 禁用
+    yuantangguang_chuhan_qingkuang = models.IntegerField(max_length=5)
+    #0:未知 1：无 2：腿部 3： 腹部关元穴4： 背部
+    yuantangguang_fuyao_qingkuang = models.CharField(max_length=50)
 
 
-
-
+    class Meta:
+        db_table = 'ill_case'

@@ -11,7 +11,7 @@ from django.core.context_processors import csrf
 
 @csrf_exempt
 def login(request):
-    pass
+    return render_to_response('index.html')
 
 @csrf_exempt
 def logout(request):

@@ -3,30 +3,30 @@
     <div class="panel">
         <div class="panel-heading">
             <div class="panel-title">
-                <h3>农业排放因子详情</h3>
+                <h3>用户详情</h3>
             </div>
              <div class="panel-options">
-                <a href="/admin/arcfactor_update_arc/{{ arcfactor.id }}" class="btn btn-success">修改农业排放因子</a>
+                <a href="/admin/userinfo_update/{{ userinfo.id }}" class="btn btn-success">修改用户</a>
             </div>
         </div>
         <div class="panel-body with-table">
             <table class="table table-bordered">
                 <tbody>
                 <tr>
-                    <td width="20%">名称</td>
-                    <td>{{ arcfactor.arc_factor_type.name }}</td>
+                    <td width="20%">用户名</td>
+                    <td>{{ userinfo.user.username }}</td>
                 </tr>
                 <tr>
-                    <td>数值</td>
-                    <td>{{ arcfactor.value }}</td>
+                    <td>姓名</td>
+                    <td>{{ userinfo.real_name }}</td>
                 </tr>
                 <tr>
-                    <td>年份</td>
-                    <td>{{ arcfactor.year }}</td>
+                    <td>邮箱</td>
+                    <td>{{ userinfo.user.email }}</td>
                 </tr>
                 <tr>
-                    <td>数值单位</td>
-                    <td>{{ arcfactor.arc_factor_type.note }}</td>
+                    <td>所属店铺名称</td>
+                    <td>{{ userinfo.shop.name }}</td>
                 </tr>
                 </tbody>
             </table>

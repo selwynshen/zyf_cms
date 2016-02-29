@@ -58,6 +58,9 @@ class Action(object):
             self._module_name = self.model()._meta.module_name.__str__().lower()
         self.path_prefix = path_prefix
 
+    def put_extra_object_list(self, request, dict):
+        pass
+
     def object_list(self,request):
         dict = {}
         objs = self.hook_list(request)
@@ -65,11 +68,13 @@ class Action(object):
         if objs:
             dict[self._module_name + 's'] = objs
         try:
-            result_objs = objs.order_by('-report_date')
+            result_objs = objs.order_by('-create_time')
             obj_len = len(result_objs)
         except Exception:
             result_objs = objs
         dict[self._module_name + 's'] = result_objs
+
+        self.put_extra_object_list(request, dict)
 
         return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),dict,context_instance=RequestContext(request))
 

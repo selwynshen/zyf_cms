@@ -14,4 +14,4 @@ urlpatterns = patterns('',
 
     url(r'^register/$', 'zyf_cms.views.register',name='注册'),
 
-    )
+)

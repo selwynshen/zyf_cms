@@ -1,0 +1,40 @@
+{% extends 'admin/base-template.html' %}
+{% block content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h3>店铺详情</h3>
+            </div>
+             <div class="panel-options">
+                <a href="/admin/shop_update/{{ shop.id }}" class="btn btn-success">修改店铺</a>
+            </div>
+        </div>
+        <div class="panel-body with-table">
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td width="20%">名称</td>
+                    <td>{{ shop.name }}</td>
+                </tr>
+                <tr>
+                    <td>地址</td>
+                    <td>{{ shop.address }}</td>
+                </tr>
+                <tr>
+                    <td>联系人</td>
+                    <td>{{ shop.contact_info }}</td>
+                </tr>
+                <tr>
+                    <td>联系方式</td>
+                    <td>{{ shop.phone }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-5">
+                    <button type="button" class="btn btn-green" onclick="javascript:history.back();">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

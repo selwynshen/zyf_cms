@@ -228,7 +228,7 @@ LOGGING = {
     },
 }
 
-LOGIN_URL='/'
+LOGIN_URL='/admin/login'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.debug",

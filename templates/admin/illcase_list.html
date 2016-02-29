@@ -1,0 +1,96 @@
+{% extends 'admin/base-template.html' %}
+{% block content %}
+    {% load pagination_tags %}
+
+			<div class="panel">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<h3>病例管理</h3>
+					</div>
+					<div class="panel-options">
+						<a href="../illcase_add/" class="btn btn-success">添加</a>
+					</div>
+				</div>
+    <div class="panel-body with-table">
+    <div class="form-horizontal">
+            <form action="../illcase_filter/" method="GET">
+                <div class="form-group">
+                    <label class=" control-label" style="float:left;padding-left:20px;">分店名称:</label>
+                    <div class="col-sm-2">
+
+                        <select class="form-control" name="shop_id" id="shop_select">
+                            {% for shop in shops %}
+                            <option value="{{ shop.id }}">{{ shop.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <label class=" control-label" style="float:left;padding-left:20px;">创建时间:</label>
+                    <div class="col-sm-2">
+                        <input type="text" id="selected_date" class="form-control" name="selected_date" placeholder="选择日期" value="{{ selected_date }}" readonly="readonly">
+                    </div>
+
+                    <div class="col-sm-2">
+                        <input type="submit" id="btnFilter" class="btn btn-success" value="筛选" />
+                        <input type="button" id="reset" class="btn btn-danger" value="重置" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+					<table class="table table-bordered">
+						<thead>
+							<th>病例名称</th>
+                            <th>所属店铺名称</th>
+                            <th>创建时间</th>
+							<th>操作</th>
+						</thead>
+						<tbody>
+                            {% autopaginate illcases 10 %}
+                            {% for illcase in illcases %}
+							<tr>
+								<td>{{ illcase.case_name }}</td>
+                                <td>{{ illcase.shop.name }}</td>
+                                <td>{{ illcase.create_time|date:'Y-m-d H:i:s' }}</td>
+								<td>
+                                    <a href="/admin/illcase_detail/{{ illcase.id }}" class="btn btn-success">查看</a>
+                                    <a href="/admin/illcase_update/{{ illcase.id }}" class="btn btn-info">编辑</a>
+                                    <a href="javascript:;" class="btn btn-danger" onclick="beforeDelete('/admin/illcase_delete/{{ illcase.id }}')">删除</a>
+                                </td>
+							</tr>
+                        {% endfor %}
+						</tbody>
+					</table>
+
+                {% paginate  %}
+		</div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="/static/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/static/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+    <script type="text/javascript" src="/static/js/report.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $('#selected_date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+        function resetSelectedDate()
+        {
+            $("#selected_date").val('');
+        }
+        $(function(){
+            $("#reset").click(function(){
+                resetSelectedDate();
+            });
+        });
+    </script>
+{% endblock %}

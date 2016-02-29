@@ -15,7 +15,7 @@ def render_response(request,*args):
 def render_response_with_csrfcookie(request,*args):
     if len(args) == 2:
         lst = list(args)
-        lst[1]['luser'] = request.luser
+        lst[1]['luser'] = request.user
         return render_to_response(lst[0],lst[1],context_instance=RequestContext(request))
     else:
         return render_to_response(args,context_instance=RequestContext(request))

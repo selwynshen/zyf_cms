@@ -9,48 +9,38 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-12">
-                    <form id="form" name="form" role="form" action="/admin/cookbook_manage/" method="post" enctype="multipart/form-data"
+                    <form id="form" name="form" role="form" action="/admin/shop_manage/" method="post" enctype="multipart/form-data"
                           class="form-horizontal form-groups-bordered">
                         {% csrf_token %}
-
+                        <input type="hidden" name="id" value="{{ shop.id }}" />
                         <div class="form-group">
                             <label class="col-sm-4 control-label">名称</label>
                             <div class="col-sm-6">
-                                <input datatype="*" type="text" class="form-control" name="value" placeholder="名称" value="{{ cookbook.name }}">
+                                <input datatype="*" type="text" class="form-control" name="name" placeholder="名称" value="{{ shop.name }}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">类型</label>
-                            <div class="col-sm-3">
-                                <input type="hidden" class="form-control" name="id" value="{{ cookbook.id }}">
-                                <select name="factor_type_id" class="form-control">
-                                    {% for food_type in food_types %}
-                                        <option value="{{ food_type.id }}">{{ food_type.name }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label">价格</label>
+                            <label class="col-sm-4 control-label">地址</label>
                             <div class="col-sm-6">
-                                <input datatype="*" type="text" class="form-control" name="value" placeholder="价格" value="{{ cookbook.price }}">
+                                <input datatype="*" type="text" class="form-control" name="address" placeholder="地址" value="{{ shop.address }}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">描述</label>
+                            <label class="col-sm-4 control-label">联系人</label>
                             <div class="col-sm-6">
-                                <input datatype="*" type="text" class="form-control" name="value" placeholder="描述" value="{{ cookbook.desp }}">
+                                <input datatype="*" type="text" class="form-control" name="contact_info" placeholder="联系人" value="{{ shop.contact_info }}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">图片</label>
+                            <label class="col-sm-4 control-label">联系方式</label>
                             <div class="col-sm-6">
-                                <input type="button" class="btn btn-orange form-control" value="点击" onclick="beforeImport('../pic_import')">
+                                <input datatype="*" type="text" class="form-control" name="phone" placeholder="联系方式" value="{{ shop.phone }}">
                             </div>
                         </div>
+
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-5">
-                                <button type="button" class="btn btn-info">提交</button>
+                                <button type="submit" class="btn btn-info">提交</button>
                                 <button type="reset" class="btn btn-danger">撤销</button>
                                 <button type="button" class="btn btn-success" onclick="javascript:history.back();">返回</button>
                             </div>

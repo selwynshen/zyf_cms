@@ -71,3 +71,746 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 187, in __init__
     super(Connection, self).__init__(*args, **kwargs2)
 OperationalError: (1049, "Unknown database 'zyf_cms'")
+ERROR 2016-02-27 16:59:02 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\zyf_cms\views.py", line 14, in login
+    return render_to_response(request, 'index.html')
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: <WSGIRequest
+path:/,
+GET:<QueryDict: {}>,
+POST:<QueryDict: {}>,
+COOKIES:{'csrftoken': 'SgFhskSECD2lWI26WB3F9Au06FKIMVm2'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Selwyn\\AppData\\Roaming',
+ 'ASL.LOG': 'Destination=file',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'SELWYNPC',
+ 'COMSPEC': 'C:\\windows\\system32\\cmd.exe',
+ 'CONFIGSETROOT': 'C:\\windows\\ConfigSetRoot',
+ 'CONTENT_LENGTH': '',
+ 'CONTENT_TYPE': 'text/plain',
+ u'CSRF_COOKIE': u'SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'DJANGO_SETTINGS_MODULE': 'zyf_cms.settings',
+ 'FFMPEG_PATH': 'D:\\Software\\ffmpeg-win64-static\\bin',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'GIT_PATH': 'C:\\Program Files (x86)\\Git\\bin',
+ 'GROOVY_HOME': 'C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Selwyn',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, sdch',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,ja;q=0.2',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'csrftoken=SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'HTTP_HOST': 'localhost:8050',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36',
+ 'INCLUDE': 'C:\\OpenSSL-Win64\\include',
+ 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk1.7.0_67',
+ 'LIB': 'C:\\OpenSSL-Win64\\lib;C:\\OpenSSL-Win64\\lib\\VC;C:\\OpenSSL-Win64\\lib\\VC\\static',
+ 'LOCALAPPDATA': 'C:\\Users\\Selwyn\\AppData\\Local',
+ 'LOGONSERVER': '\\\\MicrosoftAccount',
+ 'MAVEN_PATH': 'C:\\Android_Dev\\apache-maven-3.0.5\\bin',
+ 'NUMBER_OF_PROCESSORS': '4',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\JetBrains\\PyCharm 2.7\\bin\\..\\.\\bin;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Python27;C:\\Program Files\\MySQL\\MySQL Server 5.6\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.3.4\\;C:\\Program Files\\TortoiseSVN\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4\\bin;C:\\Python27\\Scripts;.;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;%PYTHON_HOME%;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;C:\\Android_Dev\\apache-maven-3.0.5\\bin;C:\\Program Files (x86)\\Rational\\Common;D:\\Software\\ffmpeg-win64-static\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\program files (x86)\\jetbrains\\pycharm 2.7\\jre\\jre\\bin',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.groovy;.gy',
+ 'PATH_INFO': u'/',
+ 'PROCESSOR_ARCHITECTURE': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '4501',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PSMODULEPATH': 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\',
+ 'PTYHON_HOME': 'C:\\Python27',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'PYCHARM_HOSTED': '1',
+ 'PYTHONIOENCODING': 'UTF-8',
+ 'PYTHONUNBUFFERED': '1',
+ 'PYTHON_SCRIPT_PATH': 'C:\\Python27\\Scripts',
+ 'QUERY_STRING': '',
+ 'REBEL_HOME': 'D:\\ProjData\\MyEclipse',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'GET',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'ssl.bandisoft.com',
+ 'SERVER_PORT': '8050',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.7',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\windows',
+ 'TEMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'TERM': 'emacs',
+ 'TMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'USERDOMAIN': 'SELWYNPC',
+ 'USERDOMAIN_ROAMINGPROFILE': 'SELWYNPC',
+ 'USERNAME': 'Selwyn',
+ 'USERPROFILE': 'C:\\Users\\Selwyn',
+ 'VS120COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\',
+ 'WINDIR': 'C:\\windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x00000000006471E0>,
+ 'wsgi.file_wrapper': <class wsgiref.util.FileWrapper at 0x000000000304FA08>,
+ 'wsgi.input': <socket._fileobject object at 0x000000000277D8B8>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+WARNING 2016-02-27 16:59:09 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-27 16:59:54 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/login/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 14, in login
+    return render_to_response(request, 'admin/login.html')
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: <WSGIRequest
+path:/admin/login/,
+GET:<QueryDict: {}>,
+POST:<QueryDict: {}>,
+COOKIES:{'csrftoken': 'SgFhskSECD2lWI26WB3F9Au06FKIMVm2'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Selwyn\\AppData\\Roaming',
+ 'ASL.LOG': 'Destination=file',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'SELWYNPC',
+ 'COMSPEC': 'C:\\windows\\system32\\cmd.exe',
+ 'CONFIGSETROOT': 'C:\\windows\\ConfigSetRoot',
+ 'CONTENT_LENGTH': '',
+ 'CONTENT_TYPE': 'text/plain',
+ u'CSRF_COOKIE': u'SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'DJANGO_SETTINGS_MODULE': 'zyf_cms.settings',
+ 'FFMPEG_PATH': 'D:\\Software\\ffmpeg-win64-static\\bin',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'GIT_PATH': 'C:\\Program Files (x86)\\Git\\bin',
+ 'GROOVY_HOME': 'C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Selwyn',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, sdch',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,ja;q=0.2',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'csrftoken=SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'HTTP_HOST': 'localhost:8050',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36',
+ 'INCLUDE': 'C:\\OpenSSL-Win64\\include',
+ 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk1.7.0_67',
+ 'LIB': 'C:\\OpenSSL-Win64\\lib;C:\\OpenSSL-Win64\\lib\\VC;C:\\OpenSSL-Win64\\lib\\VC\\static',
+ 'LOCALAPPDATA': 'C:\\Users\\Selwyn\\AppData\\Local',
+ 'LOGONSERVER': '\\\\MicrosoftAccount',
+ 'MAVEN_PATH': 'C:\\Android_Dev\\apache-maven-3.0.5\\bin',
+ 'NUMBER_OF_PROCESSORS': '4',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\JetBrains\\PyCharm 2.7\\bin\\..\\.\\bin;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Python27;C:\\Program Files\\MySQL\\MySQL Server 5.6\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.3.4\\;C:\\Program Files\\TortoiseSVN\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4\\bin;C:\\Python27\\Scripts;.;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;%PYTHON_HOME%;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;C:\\Android_Dev\\apache-maven-3.0.5\\bin;C:\\Program Files (x86)\\Rational\\Common;D:\\Software\\ffmpeg-win64-static\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\program files (x86)\\jetbrains\\pycharm 2.7\\jre\\jre\\bin',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.groovy;.gy',
+ 'PATH_INFO': u'/admin/login/',
+ 'PROCESSOR_ARCHITECTURE': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '4501',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PSMODULEPATH': 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\',
+ 'PTYHON_HOME': 'C:\\Python27',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'PYCHARM_HOSTED': '1',
+ 'PYTHONIOENCODING': 'UTF-8',
+ 'PYTHONUNBUFFERED': '1',
+ 'PYTHON_SCRIPT_PATH': 'C:\\Python27\\Scripts',
+ 'QUERY_STRING': '',
+ 'REBEL_HOME': 'D:\\ProjData\\MyEclipse',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'GET',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'ssl.bandisoft.com',
+ 'SERVER_PORT': '8050',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.7',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\windows',
+ 'TEMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'TERM': 'emacs',
+ 'TMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'USERDOMAIN': 'SELWYNPC',
+ 'USERDOMAIN_ROAMINGPROFILE': 'SELWYNPC',
+ 'USERNAME': 'Selwyn',
+ 'USERPROFILE': 'C:\\Users\\Selwyn',
+ 'VS120COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\',
+ 'WINDIR': 'C:\\windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x00000000006471E0>,
+ 'wsgi.file_wrapper': <class wsgiref.util.FileWrapper at 0x000000000304FA08>,
+ 'wsgi.input': <socket._fileobject object at 0x0000000003FA60C0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+ERROR 2016-02-27 17:00:02 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\zyf_cms\views.py", line 14, in login
+    return render_to_response(request, 'index.html')
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: <WSGIRequest
+path:/,
+GET:<QueryDict: {}>,
+POST:<QueryDict: {}>,
+COOKIES:{'csrftoken': 'SgFhskSECD2lWI26WB3F9Au06FKIMVm2'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Selwyn\\AppData\\Roaming',
+ 'ASL.LOG': 'Destination=file',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'SELWYNPC',
+ 'COMSPEC': 'C:\\windows\\system32\\cmd.exe',
+ 'CONFIGSETROOT': 'C:\\windows\\ConfigSetRoot',
+ 'CONTENT_LENGTH': '',
+ 'CONTENT_TYPE': 'text/plain',
+ u'CSRF_COOKIE': u'SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'DJANGO_SETTINGS_MODULE': 'zyf_cms.settings',
+ 'FFMPEG_PATH': 'D:\\Software\\ffmpeg-win64-static\\bin',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'GIT_PATH': 'C:\\Program Files (x86)\\Git\\bin',
+ 'GROOVY_HOME': 'C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Selwyn',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, sdch',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,ja;q=0.2',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'csrftoken=SgFhskSECD2lWI26WB3F9Au06FKIMVm2',
+ 'HTTP_HOST': 'localhost:8050',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36',
+ 'INCLUDE': 'C:\\OpenSSL-Win64\\include',
+ 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk1.7.0_67',
+ 'LIB': 'C:\\OpenSSL-Win64\\lib;C:\\OpenSSL-Win64\\lib\\VC;C:\\OpenSSL-Win64\\lib\\VC\\static',
+ 'LOCALAPPDATA': 'C:\\Users\\Selwyn\\AppData\\Local',
+ 'LOGONSERVER': '\\\\MicrosoftAccount',
+ 'MAVEN_PATH': 'C:\\Android_Dev\\apache-maven-3.0.5\\bin',
+ 'NUMBER_OF_PROCESSORS': '4',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\JetBrains\\PyCharm 2.7\\bin\\..\\.\\bin;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Python27;C:\\Program Files\\MySQL\\MySQL Server 5.6\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.3.4\\;C:\\Program Files\\TortoiseSVN\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Groovy\\Groovy-2.4.4\\bin;C:\\Python27\\Scripts;.;C:\\Program Files\\Java\\jdk1.7.0_67\\bin;%PYTHON_HOME%;C:\\Program Files (x86)\\SSH Communications Security\\SSH Secure Shell;C:\\Android_Dev\\apache-maven-3.0.5\\bin;C:\\Program Files (x86)\\Rational\\Common;D:\\Software\\ffmpeg-win64-static\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\program files (x86)\\jetbrains\\pycharm 2.7\\jre\\jre\\bin',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.groovy;.gy',
+ 'PATH_INFO': u'/',
+ 'PROCESSOR_ARCHITECTURE': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '4501',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PSMODULEPATH': 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\',
+ 'PTYHON_HOME': 'C:\\Python27',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'PYCHARM_HOSTED': '1',
+ 'PYTHONIOENCODING': 'UTF-8',
+ 'PYTHONUNBUFFERED': '1',
+ 'PYTHON_SCRIPT_PATH': 'C:\\Python27\\Scripts',
+ 'QUERY_STRING': '',
+ 'REBEL_HOME': 'D:\\ProjData\\MyEclipse',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'GET',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'ssl.bandisoft.com',
+ 'SERVER_PORT': '8050',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.7',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\windows',
+ 'TEMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'TERM': 'emacs',
+ 'TMP': 'C:\\Users\\Selwyn\\AppData\\Local\\Temp',
+ 'USERDOMAIN': 'SELWYNPC',
+ 'USERDOMAIN_ROAMINGPROFILE': 'SELWYNPC',
+ 'USERNAME': 'Selwyn',
+ 'USERPROFILE': 'C:\\Users\\Selwyn',
+ 'VS120COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\',
+ 'WINDIR': 'C:\\windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x00000000006471E0>,
+ 'wsgi.file_wrapper': <class wsgiref.util.FileWrapper at 0x000000000304FA08>,
+ 'wsgi.input': <socket._fileobject object at 0x0000000003FA6138>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+WARNING 2016-02-27 17:01:12 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 17:01:18 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-27 19:00:40 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/login/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 29, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 35, in import_module
+    __import__(name)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 6, in <module>
+    from admin.service import UserService
+  File "D:/ProjData/Pycharm/zyf_cms\admin\service.py", line 2, in <module>
+    from CarbonEmission.settings import HASH_KEY,HASHER
+ImportError: No module named CarbonEmission.settings
+WARNING 2016-02-27 19:00:44 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-27 19:10:50 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/login status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 79, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8050/admin/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+WARNING 2016-02-27 19:13:53 c:\python27\lib\site-packages\django\middleware\csrf.py csrf 186 Forbidden (CSRF token missing or incorrect.): /admin/login/ status_code:403
+ERROR 2016-02-27 19:28:36 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/login/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 37, in login
+    user_info = UserInfo.objects.get(user=user)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: UserInfo matching query does not exist. Lookup parameters were {'user': <User: selwyn>}
+ERROR 2016-02-27 19:32:55 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/login/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 46, in login
+    from common.auth import redirect
+ImportError: cannot import name redirect
+ERROR 2016-02-27 19:33:30 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/index/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 51, in index
+    return render_response_with_csrfcookie(request,'admin/base-iframe.html',{'defUrl':'/admin/shop_list'})
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\request_context.py", line 18, in render_response_with_csrfcookie
+    lst[1]['luser'] = request.luser
+AttributeError: 'WSGIRequest' object has no attribute 'luser'
+WARNING 2016-02-27 19:41:07 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 19:42:44 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 19:43:19 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 19:45:17 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 20:03:44 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-27 21:50:45 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-27 22:08:22 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 73, in shop_list
+    return AdminManager.get_shop_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 63, in object_list
+    objs = self.hook_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 32, in hook_list
+    shops = get_user_shop(request)
+  File "D:/ProjData/Pycharm/zyf_cms\zyf_cms\user_manage.py", line 27, in get_user_shop
+    return user_info.shop
+AttributeError: 'NoneType' object has no attribute 'shop'
+ERROR 2016-02-27 22:11:48 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 29, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 35, in import_module
+    __import__(name)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 10, in <module>
+    from common.auth import auth_required, access_permitted
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 6, in <module>
+    from zyf_cms.user_manage import get_user_shop, get_user
+ImportError: cannot import name get_user_shop
+ERROR 2016-02-27 22:11:56 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 29, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python27\lib\site-packages\django\utils\importlib.py", line 35, in import_module
+    __import__(name)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 10, in <module>
+    from common.auth import auth_required, access_permitted
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 6, in <module>
+    from zyf_cms.user_manage import get_user_shop, get_user
+ImportError: cannot import name get_user_shop
+WARNING 2016-02-28 18:11:27 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-28 18:55:22 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_manage/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 68, in shop_manage
+    return AdminManager.get_shop_action().object_manage(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 121, in object_manage
+    self.wire_others(request,obj)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 33, in wire_others
+    new_id = max_id + 1
+TypeError: unsupported operand type(s) for +: 'dict' and 'int'
+ERROR 2016-02-28 18:55:59 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_manage/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 68, in shop_manage
+    return AdminManager.get_shop_action().object_manage(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 121, in object_manage
+    self.wire_others(request,obj)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 33, in wire_others
+    new_id = max_id + 1
+TypeError: unsupported operand type(s) for +: 'dict' and 'int'
+ERROR 2016-02-28 19:01:39 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_delete/1/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+TypeError: shop_delete() got an unexpected keyword argument 'shopid'
+WARNING 2016-02-28 19:12:47 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/shop_update1 status_code:404
+WARNING 2016-02-28 19:18:28 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-28 19:18:28 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/userinfo_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 104, in userinfo_list
+    return AdminManager.get_user_info_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 63, in object_list
+    objs = self.hook_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 64, in hook_list
+    shops = get_user_shop(request)
+NameError: global name 'get_user_shop' is not defined
+ERROR 2016-02-28 19:19:37 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/userinfo_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 104, in userinfo_list
+    return AdminManager.get_user_info_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 63, in object_list
+    objs = self.hook_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 64, in hook_list
+    shops = get_user_shop(request)
+NameError: global name 'get_user_shop' is not defined
+ERROR 2016-02-28 19:34:51 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/userinfo_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 104, in userinfo_list
+    return AdminManager.get_user_info_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 63, in object_list
+    objs = self.hook_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 64, in hook_list
+    shops = get_user_shop(request)
+NameError: global name 'get_user_shop' is not defined
+ERROR 2016-02-28 19:36:17 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/userinfo_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 104, in userinfo_list
+    return AdminManager.get_user_info_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 74, in object_list
+    return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),dict,context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: admin/userinfo_list.html
+ERROR 2016-02-28 20:40:52 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/userinfo_manage/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 20, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 29, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 99, in userinfo_manage
+    return AdminManager.get_user_info_action().object_manage(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 144, in object_manage
+    self.wire_others(request,obj,errorMsg)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 106, in wire_others
+    user = User.objects.create(username=username,password=password,email=email)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 149, in create
+    return self.get_query_set().create(**kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 402, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Python27\lib\site-packages\django\db\models\base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Python27\lib\site-packages\django\db\models\base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1661, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'email' cannot be null")
+ERROR 2016-02-28 21:12:55 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_manage/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 68, in shop_manage
+    return AdminManager.get_shop_action().object_manage(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 122, in object_manage
+    obj.save(True)
+  File "C:\Python27\lib\site-packages\django\db\models\base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Python27\lib\site-packages\django\db\models\base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "C:\Python27\lib\site-packages\django\db\models\manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\models\query.py", line 1661, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Python27\lib\site-packages\django\db\models\sql\compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 127, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'group_id' cannot be null")
+WARNING 2016-02-28 21:32:28 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-02-28 22:08:13 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/shop_list/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 73, in shop_list
+    return AdminManager.get_shop_action().object_list(request)
+  File "D:/ProjData/Pycharm/zyf_cms\common\common_action.py", line 74, in object_list
+    return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),dict,context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 1044, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_tags' is not a valid tag library: ImportError raised loading zyf_cms.templatetags.custom_tags: No module named user_manager
+WARNING 2016-02-28 22:13:29 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/illcase_list/ status_code:404
+WARNING 2016-02-28 22:13:30 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/illcase_list/ status_code:404
+WARNING 2016-02-28 22:19:43 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-29 19:23:25 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-02-29 19:39:25 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/userinfo_update/ status_code:404
+WARNING 2016-02-29 19:48:26 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/illcase_list/ status_code:404
+ERROR 2016-02-29 20:19:07 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/index/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 63, in index
+    if get_branch_shop_group_id() == request.session.user_group_id:
+AttributeError: 'SessionStore' object has no attribute 'user_group_id'
+ERROR 2016-02-29 20:21:08 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/index/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 63, in index
+    if get_branch_shop_group_id() == request.session.user_group_id:
+AttributeError: 'SessionStore' object has no attribute 'user_group_id'
+ERROR 2016-02-29 20:46:55 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/index/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 63, in index
+    if get_branch_shop_group_id() == request.session.user_group_id:
+AttributeError: 'SessionStore' object has no attribute 'user_group_id'
+WARNING 2016-02-29 20:47:13 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/illcase_list status_code:404
+WARNING 2016-02-29 20:47:33 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/illcase_list/ status_code:404
+ERROR 2016-02-29 21:24:29 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/illcase_list status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django\middleware\common.py", line 70, in process_request
+    urlresolvers.is_valid_path("%s/" % request.path_info, urlconf)):
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 551, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 440, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python27\lib\site-packages\django\utils\functional.py", line 29, in wrapper
+    result = func(*args)
+  File "C:\Python27\lib\site-packages\django\core\urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import admin.views.illcase_list. View does not exist in module admin.views.
+WARNING 2016-02-29 22:04:07 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/user_verify_filter/ status_code:404
+WARNING 2016-02-29 22:16:59 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /admin/user_verify_filter/ status_code:404

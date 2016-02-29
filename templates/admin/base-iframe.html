@@ -10,14 +10,14 @@
             <div class="navbar-leftArrow">＜</div>
         </div>
         <div class="pull-left">
-            <span class="navbar-logo">XX管理系统</span>
+            <span class="navbar-logo">赵裔府后台管理系统</span>
         </div>
         <div class="pull-right navbar-user">
             <a class="button">
                 <i class="entypo-user left"></i>
                 <font>{{ luser.username }}</font>
             </a>
-            <a class="button" href="/logout">
+            <a class="button" href="/admin/logout">
                 <font class="">注销 </font>
                 <i class="entypo-logout right"></i>
             </a>
@@ -27,32 +27,28 @@
 <div class="page-container">
     <div class="sidebar-menu">
         <ul id="main-menu">
-{#            <li class="has-sub root-level">#}
-{#                <a href="javascript:void(0);">#}
-{#                    <i class="entypo-menu"></i>#}
-{#                    <span>公共建筑</span>#}
-{#                </a>#}
-{#                <ul class="">#}
-{#                    <li><a class="" href="">eeeeeeeeeee</a></li>#}
-{#                    <li><a href="">eeeeeeeeeee</a></li>#}
-{#                    <li><a href="">eeeeeeeeeee</a></li>#}
-{#                    <li><a href="">eeeeeeeeeee</a></li>#}
-{#                </ul>#}
-{#            </li>#}
+            {% if  request.session.user_group_id  <= 2 %}
             <li class="has-sub root-level">
-                <a href="javascript:void(0);">
+                <a href="javascript:iframe_jump('/admin/shop_list/');">
                     <i class="entypo-menu"></i>
-                    <span>XXX</span>
+                    <span>店铺管理</span>
                 </a>
-                <ul>
-{#                    <li><a href="javascript:iframe_jump('/admin/enterprisetype_list/');">企业大类管理</a></li>#}
-                    <li><a href="javascript:iframe_jump('/admin/enterprise_list/');">XXX</a></li>
-                    <li><a href="javascript:iframe_jump('/admin/indrcaginfo_list/')">XXXX</a></li>
-{#                    <li><a href="">eeeeeeeeeee</a></li>#}
-{#                    <li><a href="">eeeeeeeeeee</a></li>#}
-                </ul>
             </li>
-
+            <li class="has-sub root-level">
+                <a href="javascript:iframe_jump('/admin/userinfo_list/');">
+                    <i class="entypo-menu"></i>
+                    <span>用户管理</span>
+                </a>
+            </li>
+            {% endif %}
+            {% ifnotequal  request.session.user_group_id 1 %}
+            <li class="has-sub root-level">
+                <a href="javascript:iframe_jump('/admin/illcase_list/');">
+                    <i class="entypo-menu"></i>
+                    <span>病例管理</span>
+                </a>
+            </li>
+            {% endifnotequal %}
         </ul>
     </div>
     <div class="main-content">
