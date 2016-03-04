@@ -1,0 +1,40 @@
+@charset "utf-8";
+body,html{
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+#linkList{
+    position: fixed;
+    left: 30px;
+    top: 20%;
+    background-color: #32323a;
+    text-align: center;
+    padding: 20px 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+}
+#linkList ul li{
+    line-height: 30px;
+}
+.linkActive{
+	background-color: #1eb5ad;
+}
+#linkList ul li a{   
+    color: #b2b3b4;
+}
+input[type="button"]{
+    background-color: #ee4f3c;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.form-control{
+	border: none;
+    box-shadow: none;
+    text-align: center;
+}
+caption{
+	font-size: 16px;
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+h2{
+	text-align: center;
+    font-weight: 500;
+    color: #5f6062;
+    line-height: 80px;
+}
+.form-group{
+    width: 100%;
+}
+
+.form-control{
+    box-shadow: none;
+    border: none;
+    margin: 3px 5px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+.blcont h4{
+    line-height: 40px;
+    /* background-color: #C1C3EF; */
+    padding-left: 20px;
+    border-bottom: 1px dashed #e8e8e8;
+    margin-top: 20px;
+    color: #5f6062;
+}
+.blcont form{
+	padding: 10px;
+}
+.blcont form input,.blcont form select{
+    border: 1px solid #efefef;
+}
+.blcont form select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    background-color: #ededed;
+    cursor: pointer; 
+}
+.blcont label{
+/*	line-height: 40px;*/
+    display: inline-block;
+    color: #a4a4a4;
+}
+.blcont input[type = "text"],.blcont select{
+    height: 25px;
+    width: 150px;
+    margin-left: 10px;
+}
+.blcont select{
+	color: #a4a4a4;
+
+}
+.blcont input[type = "checkbox"]{
+	width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0px;
+    margin:0 2px 0 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+   /* -webkit-appearance: none;
+    appearance: none;*/
+}
+.ipt-middle{
+	width: 300px!important;
+}
+.ipt-big{
+	width: 900px!important;
+	height: 25px!important;
+}
+.blcont .submit{
+    text-align: center;
+    padding: 30px;
+}
+.blcont .submit input[type="button"],.blcont .submit input[type="submit"]{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.blcont .submit input[type="submit"]{
+    margin-left: 30px;
+    background-color: #1aabe0;
+}
+.blcont .submit input[type="button"]{
+    background-color: #ee4f3c;
+}
+.inset{
+        margin-left: -18px;
+    margin-right: 15px;
+}

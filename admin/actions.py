@@ -8,7 +8,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.template import RequestContext
 
 from common.auth import get_user_shops, get_user_shops_below, is_superadmin, get_head_shop_group_id, get_branch_shop_group_id, is_head_shop_user
-from zyf_cms.user_manage import get_user_shop
+from zyf_cms.user_manage import get_user_shop, get_user_info
 from common.format_helper import string_to_date
 
 class ShopAction(Action):
@@ -187,6 +187,15 @@ class IllCaseAction(Action):
         shops = get_user_shops_below(request)
         return IllCase.objects.filter(shop__in=shops)
 
+    def wire_others(self,request,obj):
+        dabian_zhuangtai_list = request.POST.getlist("dabian_zhuangtai")
+        obj.dabian_zhuangtai = ','.join(dabian_zhuangtai_list)
+
+
+        #设置店铺和填写人用户
+        obj.user_info = get_user_info(request)
+        obj.shop = obj.user_info.shop
+
     def put_extra_object_list(self, request, dict):
         shops = get_user_shops_below(request)
         dict['shops'] = shops
@@ -199,9 +208,10 @@ class IllCaseAction(Action):
         objs = self.model.objects.all()
 
         if report_date:
-            create_time = string_to_date(report_date)
-            if create_time:
-                objs = objs.filter(create_time=create_time)
+            begin_date = string_to_date(report_date)
+            from datetime import  timedelta
+            if begin_date:
+                objs = objs.filter(create_time__range=(begin_date,begin_date + timedelta(1)))
 
         if shop_id:
             shop = Shop.objects.filter(id=shop_id)
@@ -211,7 +221,7 @@ class IllCaseAction(Action):
 
         shops = get_user_shops_below(request)
 
-        return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),{self._module_name + 's':objs,'selected_date':report_date,'shop_id':shop_id, 'shops': shops},context_instance=RequestContext(request))
+        return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),{self._module_name + 's':objs,'selected_date':report_date,'shop_id':int(shop_id), 'shops': shops},context_instance=RequestContext(request))
 
 
 class AdminManager:

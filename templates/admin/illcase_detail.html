@@ -1,0 +1,371 @@
+{% extends 'admin/base-template.html' %}
+{% load custom_tags %}
+{% block css %}
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/bl.css">
+    <link rel="stylesheet" href="/static/css/details.css">
+{% endblock %}
+{% block content %}
+    <div class="container" id="main" style="">
+
+    <div id="linkList">
+        <ul>
+            <li><a href="#info">基本信息</a></li>
+            <li><a href="#statu">精神状态</a></li>
+            <li><a href="#bowler2">二便情况</a></li>
+            <li><a href="#sleep">睡眠质量</a></li>
+            <li><a href="#st">看舌苔</a></li>
+            <li><a href="#eye">看眼睛</a></li>
+            <li><a href="#legs">腿脚情况</a></li>
+            <li><a href="#med">自身服用药物</a></li>
+            <li><a href="#fmed">辅助药物使用</a></li>
+            <li><a href="#meal">饮食情况</a></li>
+            <li><a href="#ll">理疗情况</a></li>
+        </ul>
+    </div>
+
+    <!--基本信息-->
+    <div id="info" class="sl">
+        <table class="table table-bordered">
+            <caption>基本信息</caption>
+            <tbody>
+            <tr>
+                <td class="col-sm-2">姓名</td>
+                <td class="col-sm-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">性别</td>
+                <td class="col-lg-10"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">年龄</td>
+                <td class="col-lg-10"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">入府血糖</td>
+                <td class="col-lg-10"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">入府血压</td>
+                <td class="col-lg-10"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">入府时段</td>
+                <td class="col-lg-10"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--精神状态-->
+    <div id="statu" class="sl">
+        <table class="table table-bordered">
+            <caption>精神状态</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">疲劳感</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--二便情况-->
+    <div id="bowler2" class="sl">
+        <table class="table table-bordered">
+            <caption>二便情况</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">大便</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">成形</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">腹痛</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">小便白天</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">小便夜里</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">泡沫</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">灼痛感</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">小便颜色</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--睡眠质量-->
+    <div id="sleep" class="sl">
+        <table class="table table-bordered">
+            <caption>睡眠质量</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">失眠梦多不易入睡</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">睡眠时间</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--看舌苔-->
+    <div id="st" class="sl">
+        <table class="table table-bordered">
+            <caption>看舌苔</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">舌质</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">医疗过程中齿痕裂纹</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">舌色</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">舌苔</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--看眼睛-->
+    <div id="eye" class="sl">
+        <table class="table table-bordered">
+            <caption>看眼睛</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">有血丝</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">备注</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--腿脚情况-->
+    <div id="legs" class="sl">
+        <table class="table table-bordered">
+            <caption>腿脚情况</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">正常</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">口服降糖药名称：</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">有血丝</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">剂量</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">使用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">注射胰岛素名称</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">剂量</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">使用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">降压药名称</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">剂量</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">使用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">降脂药名称</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">剂量</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">使用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--自身服用药物-->
+    <div id="med" class="sl">
+        <table class="table table-bordered">
+            <caption>自身服用药物</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">民乐茶</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">饮用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--辅助药物使用情况-->
+    <div id="fmed" class="sl">
+        <table class="table table-bordered">
+            <caption>辅助药物使用情况</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">贴敷的穴位</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖贴的使用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">金匮肾气丸</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">服用情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--饮食情况-->
+    <div id="meal" class="sl">
+        <table class="table table-bordered">
+            <caption>饮食情况</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">遵循远糖食谱</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">早餐情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">午餐情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">晚餐情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--理疗情况-->
+    <div id="ll" class="sl">
+        <table class="table table-bordered">
+            <caption>理疗情况</caption>
+            <tbody>
+            <tr>
+                <td class="col-lg-4">远糖法:腹部推拿</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖法:筋络疏通</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖术:泡脚温度</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖术:时间</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖术:出汗情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:舱的温度</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:毯的温度</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:时间</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:部位</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:出汗情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            <tr>
+                <td class="col-lg-4">远糖光:敷药情况</td>
+                <td class="col-lg-8"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form>
+        <div class="submit form-group">
+            <div class="form-control">
+                <input type="button" value="返回" />
+            </div>
+        </div>
+    </form>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="/static/js/details.js"></script>
+{% endblock %}
+

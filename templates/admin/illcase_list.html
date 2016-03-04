@@ -20,7 +20,7 @@
 
                         <select class="form-control" name="shop_id" id="shop_select">
                             {% for shop in shops %}
-                            <option value="{{ shop.id }}">{{ shop.name }}</option>
+                            <option value="{{ shop.id }}" {% ifequal shop.id shop_id %}selected="true"{% endifequal %}>{{ shop.name }}</option>
                             {% endfor %}
                         </select>
                     </div>

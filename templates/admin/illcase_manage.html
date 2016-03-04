@@ -1,0 +1,451 @@
+{% extends 'common/base-template.html' %}
+{% load custom_tags %}
+{% block css %}
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/bl.css">
+{% endblock %}
+{% block content %}
+    <div class="container blcont" style="background-color: #fff;">
+    <h2>每天入府的病例</h2>
+
+    <form id="form" name="form" role="form" action="/admin/illcase_manage/" method="post" enctype="multipart/form-data"
+          class="form-horizontal form-groups-bordered">
+    {% csrf_token %}
+    <input type="hidden" name="id" value="{{ illcase.id }}" />
+    <div class="tit">
+        <div class="form-control">
+            <label for="">病例名称 <input type="text" class="ipt-middle" name="case_name" value="{{ illcase.case_name }}"/></label>
+        </div>
+    </div>
+
+    <div class="info form-group">
+        <h4>基本信息</h4>
+        <div class="form-control">
+            <label for="">姓名 <input type="text" name="name" value="{{ illcase.name }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                性别
+                <select name="gender" id="gender">
+                    <option value="1" {% ifequal illcase.gender 1%}selected="true"{% endifequal %}>男</option>
+                    <option value="0" {% ifequal illcase.gender 0%}selected="true"{% endifequal %}>女</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">年龄 <input type="text" name="age" value="{{ illcase.age }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">入府血糖 <input type="text" name="xuetang" value="{{ illcase.xuetang }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">入府血压 <input type="text" name="xueya" value="{{ illcase.xueya }}"/></label>
+        </div>
+        <div class="form-control">
+            <label for="">入府时段 <input type="text" name="shiduan" value="{{ illcase.shiduan }}"/></label>
+        </div>
+
+    </div>
+
+    <div class="statu form-group">
+        <h4>精神状态</h4>
+        <div class="form-control">
+            <label for="">
+                疲劳感 <select name="pilaogan" id="">
+                <option value="1" {% ifequal illcase.pilaogan 1%}selected="true"{% endifequal %}>是</option>
+                <option value="2" {% ifequal illcase.pilaogan 2%}selected="true"{% endifequal %}>否</option>
+                <option value="3" {% ifequal illcase.pilaogan 3%}selected="true"{% endifequal %}>略微</option>
+            </select>
+            </label>
+        </div>
+    </div>
+
+    <!--二便情况-->
+    <div class="bowler2 form-group">
+        <h4>二便情况</h4>
+        <div class="form-control">
+            <label for="">大便 <input type="text" name="dabian_cishu" value="{{ illcase.dabian_cishu }}"/><i class="inset">次</i></label>
+        </div>
+        <div class="form-control">
+            <label>成形: </label>
+            <label for=""><input type="checkbox" name="dabian_zhuangtai" value="1" {% if '1' in illcase.dabian_zhuangtai|get_checkbox_list %}checked="true"{% endif %}/>成形</label>
+            <label for=""><input type="checkbox" name="dabian_zhuangtai" value="2" {% if '2' in illcase.dabian_zhuangtai|get_checkbox_list %}checked="true"{% endif %}/>不成形</label>
+            <label for=""><input type="checkbox" name="dabian_zhuangtai" value="3" {% if '3' in illcase.dabian_zhuangtai|get_checkbox_list %}checked="true"{% endif %}/>顺畅</label>
+            <label for=""><input type="checkbox" name="dabian_zhuangtai" value="4" {% if '4' in illcase.dabian_zhuangtai|get_checkbox_list %}checked="true"{% endif %}/>便不尽</label>
+            <label for=""><input type="checkbox" name="dabian_zhuangtai" value="5" {% if '5' in illcase.dabian_zhuangtai|get_checkbox_list %}checked="true"{% endif %}/>气味恶臭</label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                腹痛 <select name="futong" id="">
+                <option value="1" {% ifequal illcase.futong 1%}selected="true"{% endifequal %}>有</option>
+                <option value="2" {% ifequal illcase.futong 2%}selected="true"{% endifequal %}>无</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">小便 <input type="text" name="xiaobian_baitian" value="{{ illcase.xiaobian_baitian }}"/><i class="inset">次</i>白天</label>
+            <label for=""><input type="text" name="xiaobian_wanshang" value="{{ illcase.xiaobian_wanshang }}" /><i class="inset">次</i>夜里</label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                泡沫 <select name="paomo" id="">
+                <option value="1" {% ifequal illcase.paomo 1%}selected="true"{% endifequal %}>多</option>
+                <option value="2" {% ifequal illcase.paomo 2%}selected="true"{% endifequal %}>少</option>
+                <option value="3" {% ifequal illcase.paomo 3%}selected="true"{% endifequal %}>一般</option>
+                <option value="4" {% ifequal illcase.paomo 4%}selected="true"{% endifequal %}>无</option>
+
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                灼痛感 <select name="zhuotonggan" id="">
+                <option value="1" {% ifequal illcase.zhuotonggan 1%}selected="true"{% endifequal %}>有</option>
+                <option value="2" {% ifequal illcase.zhuotonggan 2%}selected="true"{% endifequal %}>无</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                小便颜色 <select name="xiaobian_yanse" id="">
+                <option value="1" {% ifequal illcase.xiaobian_yanse 1%}selected="true"{% endifequal %}>清</option>
+                <option value="2" {% ifequal illcase.xiaobian_yanse 2%}selected="true"{% endifequal %}>浊</option>
+                <option value="3" {% ifequal illcase.xiaobian_yanse 3%}selected="true"{% endifequal %}>浅黄</option>
+                <option value="4" {% ifequal illcase.xiaobian_yanse 4%}selected="true"{% endifequal %}>深黄</option>
+
+            </select>
+            </label>
+        </div>
+    </div>
+
+    <!--睡眠质量-->
+    <div class="sleep form-group">
+        <h4>睡眠质量</h4>
+        <div class="form-control">
+            <label for="">
+                睡眠情况 <select name="shuimian_zhiliang" id="">
+                <option value="1" {% ifequal illcase.shuimian_zhiliang 1%}selected="true"{% endifequal %}>失眠多梦不易入睡</option>
+                <option value="2" {% ifequal illcase.shuimian_zhiliang 2%}selected="true"{% endifequal %}>做梦醒来就忘不困</option>
+                <option value="3" {% ifequal illcase.shuimian_zhiliang 3%}selected="true"{% endifequal %}>多梦醒来精神疲劳</option>
+                <option value="4" {% ifequal illcase.shuimian_zhiliang 4%}selected="true"{% endifequal %}>有凌晨醒的现象</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">睡眠时间 <input type="text" name="shuimian_shijian_kaishi" value="{{ illcase.shuimian_shijian_kaishi }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">至 <input type="text" name="shuimian_shijian_jieshu" value="{{ illcase.shuimian_shijian_jieshu }}" /></label>
+        </div>
+    </div>
+
+    <!--看舌苔-->
+    <div class="st form-group">
+        <h4>看舌苔</h4>
+        <div class="form-control">
+            <label>舌质: </label>
+            <label for=""><input type="checkbox" name="shezhi" value="1" {% if '1' in illcase.shezhi|get_checkbox_list %}checked="true"{% endif %}/>肥大</label>
+            <label for=""><input type="checkbox" name="shezhi" value="2" {% if '2' in illcase.shezhi|get_checkbox_list %}checked="true"{% endif %} />瘦小</label>
+            <label for=""><input type="checkbox" name="shezhi" value="3" {% if '3' in illcase.shezhi|get_checkbox_list %}checked="true"{% endif %} />有齿痕</label>
+            <label for=""><input type="checkbox" name="shezhi" value="4" {% if '4' in illcase.shezhi|get_checkbox_list %}checked="true"{% endif %} />舌中有裂纹</label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                医疗过程中齿痕裂纹 <select name="chiheng_jianqing" id="">
+                <option value="1" {% ifequal illcase.chiheng_jianqing 1%}selected="true"{% endifequal %}>是</option>
+                <option value="2" {% ifequal illcase.chiheng_jianqing 2%}selected="true"{% endifequal %}>否</option>
+            </select>减轻
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                舌色
+            </label>
+            <label for=""><input type="checkbox" name="shese" value="1" {% if '1' in illcase.shese|get_checkbox_list %}checked="true"{% endif %} />黄腻</label>
+            <label for=""><input type="checkbox" name="shese" value="2" {% if '2' in illcase.shese|get_checkbox_list %}checked="true"{% endif %} />白苔</label>
+            <label for=""><input type="checkbox" name="shese" value="3" {% if '3' in illcase.shese|get_checkbox_list %}checked="true"{% endif %} />黑苔</label>
+            <label for=""><input type="checkbox" name="shese" value="4" {% if '4' in illcase.shese|get_checkbox_list %}checked="true"{% endif %} />灰苔</label>
+        </div>
+        <div class="form-control">
+            <label>舌苔: </label>
+            <label for=""><input type="checkbox" name="shetai" value="1" {% if '1' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />黄腻</label>
+            <label for=""><input type="checkbox" name="shetai" value="2" {% if '2' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />白苔</label>
+            <label for=""><input type="checkbox" name="shetai" value="3" {% if '3' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />黑苔</label>
+            <label for=""><input type="checkbox" name="shetai" value="4" {% if '4' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />灰苔</label>
+            <label for=""><input type="checkbox" name="shetai" value="5" {% if '5' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />苔薄</label>
+            <label for=""><input type="checkbox" name="shetai" value="6" {% if '6' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />苔厚</label>
+            <label for=""><input type="checkbox" name="shetai" value="7" {% if '7' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />润</label>
+            <label for=""><input type="checkbox" name="shetai" value="8" {% if '8' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />燥</label>
+            <label for=""><input type="checkbox" name="shetai" value="9" {% if '9' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />腐</label>
+            <label for=""><input type="checkbox" name="shetai" value="10" {% if '10' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />腻</label>
+            <label for=""><input type="checkbox" name="shetai" value="10" {% if '10' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />剥落苔</label>
+        </div>
+    </div>
+
+    <!--看眼睛-->
+    <div class="eye form-group">
+        <h4>看眼睛</h4>
+        <div class="form-control">
+            <label>有血丝：</label>
+            <label for=""><input type="checkbox" name="yanjing" value="1" {% if '1' in illcase.yanjing|get_checkbox_list %}checked="true"{% endif %} />有血丝</label>
+            <label for=""><input type="checkbox" name="yanjing" value="2" {% if '2' in illcase.yanjing|get_checkbox_list %}checked="true"{% endif %} />有黄斑</label>
+            <label for=""><input type="checkbox" name="yanjing" value="3" {% if '3' in illcase.yanjing|get_checkbox_list %}checked="true"{% endif %} />干涩</label>
+            <label for=""><input type="checkbox" name="yanjing" value="4" {% if '4' in illcase.yanjing|get_checkbox_list %}checked="true"{% endif %} />模糊</label>
+            <label for=""><input type="checkbox" name="yanjing" value="5" {% if '5' in illcase.yanjing|get_checkbox_list %}checked="true"{% endif %} />不适</label><br>
+        </div>
+        <div class="form-control">
+            <label>备注： <input class="ipt-big" type="text" name="yanjing_beizhu" value="{{ illcase.yanjing_beizhu }}"/></label>
+        </div>
+    </div>
+
+    <!--腿脚情况-->
+    <div class="legs form-group">
+        <h4>腿脚情况</h4>
+        <div class="form-control">
+            <label>正常：</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="1" {% if '1' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />正常</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="2" {% if '2' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />有麻木感</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="3" {% if '3' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />长敢</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="4" {% if '4' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />冰凉</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="5" {% if '5' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />疼痛</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="6" {% if '6' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />刺痛</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="7" {% if '7' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />抽搐</label><br>
+
+        </div>
+        <div class="form-control">
+            <label>部位：</label>
+            <input class="ipt-middle" type="text" name="tuijiao_buwei" value="{{ illcase.tuijiao_buwei }}" />
+        </div><br>
+
+
+        <div class="form-control">
+            <label>口服降糖药名称： <input class="ipt-middle" type="text" name="jiangtangyao_mingcheng" value="{{ illcase.jiangtangyao_mingcheng }}" /></label>
+        </div>
+        <div class="form-control">
+            <label>剂量： <input  type="text" name="jiangtangyao_jiliang" value="{{ illcase.jiangtangyao_jiliang }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                使用情况： <select name="jiangtangyao_zhuangtai" id="">
+                <option value="1" {% ifequal illcase.jiangtangyao_zhuangtai 1%}selected="true"{% endifequal %}>正常</option>
+                <option value="2" {% ifequal illcase.jiangtangyao_zhuangtai 2%}selected="true"{% endifequal %}>减药</option>
+                <option value="3" {% ifequal illcase.jiangtangyao_zhuangtai 3%}selected="true"{% endifequal %}>停用</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>注射胰岛素名称： <input class="" type="text" name="yidaosu__mingcheng" value="{{ illcase.yidaosu__mingcheng }}" /></label>
+        </div>
+        <div class="form-control">
+            <label>剂量： <input  type="text" name="yidaosu_jiliang" value="{{ illcase.yidaosu_jiliang }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                时段： <select name="yidaosu_shiyong_qingkuang" id="" style="width: 80px;">
+                <option value="1" {% ifequal illcase.yidaosu_shiyong_qingkuang 1%}selected="true"{% endifequal %}>早</option>
+                <option value="2" {% ifequal illcase.yidaosu_shiyong_qingkuang 2%}selected="true"{% endifequal %}>中</option>
+                <option value="3" {% ifequal illcase.yidaosu_shiyong_qingkuang 3%}selected="true"{% endifequal %}>晚</option>
+                <option value="4" {% ifequal illcase.yidaosu_shiyong_qingkuang 4%}selected="true"{% endifequal %}>睡前</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                使用情况： <select name="yidaosu_zhuangtai" id="">
+                <option value="1" {% ifequal illcase.yidaosu_zhuangtai 1%}selected="true"{% endifequal %}>正常</option>
+                <option value="2" {% ifequal illcase.yidaosu_zhuangtai 2%}selected="true"{% endifequal %}>减药</option>
+                <option value="3" {% ifequal illcase.yidaosu_zhuangtai 3%}selected="true"{% endifequal %}>停用</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>降压药名称：  &nbsp;&nbsp;&nbsp;&nbsp;<input class="ipt-middle" type="text" name="jiangyayao_mingcheng" value="{{ illcase.jiangyayao_mingcheng }}" /></label>
+        </div>
+        <div class="form-control">
+            <label>剂量： <input  type="text" name="jiangyayao_jiliang" value="{{ illcase.jiangyayao_jiliang }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                使用情况： <select name="jiangyayao_zhuangtai" id="">
+                <option value="1" {% ifequal illcase.jiangyayao_zhuangtai 1%}selected="true"{% endifequal %}>正常</option>
+                <option value="2" {% ifequal illcase.jiangyayao_zhuangtai 2%}selected="true"{% endifequal %}>减药</option>
+                <option value="3" {% ifequal illcase.jiangyayao_zhuangtai 3%}selected="true"{% endifequal %}>停用</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>降脂药名称：  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="ipt-middle" type="text" name="jiangzhiyao_mingcheng" value="{{ illcase.jiangzhiyao_mingcheng }}" /></label>
+        </div>
+        <div class="form-control">
+            <label>剂量： <input  type="text" name="jiangzhiyao_jiliang" value="{{ illcase.jiangzhiyao_jiliang }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                使用情况： <select name="jiangzhiyao_zhuangtai" id="">
+                <option value="1" {% ifequal illcase.jiangzhiyao_zhuangtai 1%}selected="true"{% endifequal %}>正常</option>
+                <option value="2" {% ifequal illcase.jiangzhiyao_zhuangtai 2%}selected="true"{% endifequal %}>减药</option>
+                <option value="3" {% ifequal illcase.jiangzhiyao_zhuangtai 3%}selected="true"{% endifequal %}>停用</option>
+            </select>
+            </label>
+        </div>
+    </div>
+
+    <!--自身服用药物-->
+    <div class="med form-group">
+        <h4>自身服用药物</h4>
+        <div class="form-control">
+            <label>民乐茶：</label>
+            <label for=""><input type="checkbox" name="minyuecha" value="1" {% if '1' in illcase.minyuecha|get_checkbox_list %}checked="true"{% endif %} />1号</label>
+            <label for=""><input type="checkbox" name="minyuecha" value="2" {% if '2' in illcase.minyuecha|get_checkbox_list %}checked="true"{% endif %} />2号</label>
+            <label for=""><input type="checkbox" name="minyuecha" value="3" {% if '3' in illcase.minyuecha|get_checkbox_list %}checked="true"{% endif %} />中号</label>
+        </div>
+        <div class="form-control">
+            <label>饮用情况： <input class="ipt-big" type="text"  name="minyuecha_yinyong_qingkuang" value="{{ illcase.minyuecha_yinyong_qingkuang }}"/></label>
+        </div>
+        <br/>
+        <div class="form-control">
+            <label>五子散：</label>
+            <label for=""><input type="checkbox" name="wuzisan" value="1" {% if '1' in illcase.wuzisan|get_checkbox_list %}checked="true"{% endif %} />1号</label>
+            <label for=""><input type="checkbox" name="wuzisan" value="2" {% if '2' in illcase.wuzisan|get_checkbox_list %}checked="true"{% endif %} />2号</label>
+            <label for=""><input type="checkbox" name="wuzisan" value="3" {% if '3' in illcase.wuzisan|get_checkbox_list %}checked="true"{% endif %} />3号</label>
+        </div>
+        <div class="form-control">
+            <label for="">一日 <input type="text" name="wuzisan_yitian_cishu" value="{{ illcase.wuzisan_yitian_cishu }}"/><i class="inset">次</i></label>
+        </div>
+        <div class="form-control">
+            <label for="">一次 <input type="text" name="wuzisan_yici" value="{{ illcase.wuzisan_yici }}"/><i class="inset">粒</i></label>
+        </div>
+    </div>
+
+    <!--辅助药物使用情况-->
+    <div class="fmed form-group">
+        <h4>辅助药物使用情况</h4>
+        <div class="form-control">
+            <label>远糖贴贴敷的穴位：</label>
+            <label for=""><input type="checkbox" name="yuantangtie_tiefu_xuewei" value="1" {% if '1' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}checked="true"{% endif %} />会阴</label>
+            <label for=""><input type="checkbox" name="yuantangtie_tiefu_xuewei" value="2" {% if '2' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}checked="true"{% endif %} />关元</label>
+            <label for=""><input type="checkbox" name="yuantangtie_tiefu_xuewei" value="3" {% if '3' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}checked="true"{% endif %} />涌泉</label>
+        </div>
+        <br/>
+        <div class="form-control">
+            <label>辅助药物：</label>
+            <label for=""><input type="checkbox" name="fuzhuyaowu" value="1" {% if '1' in illcase.fuzhuyaowu|get_checkbox_list %}checked="true"{% endif %} />金匮肾气丸</label>
+            <label for=""><input type="checkbox" name="fuzhuyaowu" value="2" {% if '2' in illcase.fuzhuyaowu|get_checkbox_list %}checked="true"{% endif %} />六味地黄丸</label>
+            <label for=""><input type="checkbox" name="fuzhuyaowu" value="3" {% if '3' in illcase.fuzhuyaowu|get_checkbox_list %}checked="true"{% endif %} />直播地黄丸</label>
+            <label for=""><input type="checkbox" name="fuzhuyaowu" value="4" {% if '4' in illcase.fuzhuyaowu|get_checkbox_list %}checked="true"{% endif %} />人参归脾丸</label>
+            <label for=""><input type="checkbox" name="fuzhuyaowu" value="5" {% if '5' in illcase.fuzhuyaowu|get_checkbox_list %}checked="true"{% endif %} />肾源</label>
+        </div>
+        <div class="form-control">
+            <label>服用情况： <select name="fuzhuyaowu_fuyong_qingkuang" id="">
+                <option value="1" {% ifequal illcase.fuzhuyaowu_fuyong_qingkuang 1%}selected="true"{% endifequal %}>正常剂量</option>
+                <option value="2" {% ifequal illcase.fuzhuyaowu_fuyong_qingkuang 2%}selected="true"{% endifequal %}>翻倍剂量</option>
+
+            </select></label>
+        </div>
+    </div>
+
+    <!--饮食情况-->
+    <div class="meal form-group">
+        <h4>饮食情况</h4>
+        <div class="form-control">
+            <label for="">
+                遵循远糖食谱： <select name="zhuixun_yuantang_shipu" id="">
+                <option value="1" {% ifequal illcase.zhuixun_yuantang_shipu 1%}selected="true"{% endifequal %}>是</option>
+                <option value="2" {% ifequal illcase.zhuixun_yuantang_shipu 2%}selected="true"{% endifequal %}>否</option>
+            </select>
+            </label>
+        </div></br>
+        <div class="form-control">
+            <label>早餐情况： </label><textarea name="zaocan_qingkuang" rows="3" cols="80">{{ illcase.zaocan_qingkuang }}</textarea>
+        </div>
+        <div class="form-control">
+            <label>午餐情况： </label><textarea name="wucan_qingkuang" rows="3" cols="80">{{ illcase.wucan_qingkuang }}</textarea>
+        </div>
+        <div class="form-control">
+            <label>晚餐情况： </label><textarea name="wancan_qingkuang" rows="3" cols="80">{{ wancan_qingkuang }}</textarea>
+        </div>
+    </div>
+
+    <!--理疗情况-->
+    <div class="ll form-group">
+        <h4>理疗情况</h4>
+        <div class="form-control">
+            <label for="">
+                远糖法： <select name="yuantangfa" id="">
+                <option value="1" {% ifequal illcase.yuantangfa 1%}selected="true"{% endifequal %}>腹部推拿</option>
+                <option value="2" {% ifequal illcase.yuantangfa 2%}selected="true"{% endifequal %}>经络疏通</option>
+            </select>
+            </label>
+        </div>
+        <label>远糖术：</label>
+        <div class="form-control">
+            <label for="">泡脚温度 <input type="text" name="yuantangshu_paojiao_wendu" value="{{ illcase.yuantangshu_paojiao_wendu }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">时间<input type="text" name="yuantangshu_shijian" value="{{ illcase.yuantangshu_shijian }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">
+                出汗情况： <select name="yuantangshu_chuhan_qingkuang" id="">
+                <option value="1" {% ifequal illcase.yuantangshu_chuhan_qingkuang 1%}selected="true"{% endifequal %}>不出汗</option>
+                <option value="2" {% ifequal illcase.yuantangshu_chuhan_qingkuang 2%}selected="true"{% endifequal %}>微汗</option>
+                <option value="3" {% ifequal illcase.yuantangshu_chuhan_qingkuang 3%}selected="true"{% endifequal %}>正常</option>
+                <option value="4" {% ifequal illcase.yuantangshu_chuhan_qingkuang 4%}selected="true"{% endifequal %}>大汗</option>
+                <option value="5" {% ifequal illcase.yuantangshu_chuhan_qingkuang 5%}selected="true"{% endifequal %}>禁用</option>
+            </select>
+            </label><br>
+        </div><br>
+        <label>远糖光：</label>
+        <div class="form-control">
+            <label for="">舱的温度 <input type="text" name="yuantangguang_chuang_wendu" value="{{ illcase.yuantangguang_chuang_wendu }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">毯的温度<input type="text" name="yuantangguang_tan_wendu" value="{{ illcase.yuantangguang_tan_wendu }}" /></label>
+        </div>
+        <div class="form-control">
+            <label for="">时间<input type="text" name="yuantangguang_shijian" value="{{ illcase.yuantangguang_shijian }}" /></label><br>
+        </div>
+        <div class="form-control">
+            <label>部位：</label>
+            <label for=""><input type="checkbox" name="yuantangguang_buwei" value="1" {% if '1' in illcase.yuantangguang_buwei|get_checkbox_list %}checked="true"{% endif %} />腿</label>
+            <label for=""><input type="checkbox" name="yuantangguang_buwei" value="2" {% if '2' in illcase.yuantangguang_buwei|get_checkbox_list %}checked="true"{% endif %} />腹部</label>
+            <label for=""><input type="checkbox" name="yuantangguang_buwei" value="3" {% if '3' in illcase.yuantangguang_buwei|get_checkbox_list %}checked="true"{% endif %} /肚脐关元处></label>
+            <label for=""><input type="checkbox" name="yuantangguang_buwei" value="4" {% if '4' in illcase.yuantangguang_buwei|get_checkbox_list %}checked="true"{% endif %} />背部</label>
+            <label for=""><input type="checkbox" name="yuantangguang_buwei" value="5" {% if '5' in illcase.yuantangguang_buwei|get_checkbox_list %}checked="true"{% endif %} />凶十二锥以下</label><br>
+        </div><br>
+        <div class="form-control">
+            <label for="">
+                出汗情况： <select name="yuantangguang_chuhan_qingkuang" id="">
+                <option value="1" {% ifequal illcase.yuantangguang_chuhan_qingkuang 1%}selected="true"{% endifequal %}>不出汗</option>
+                <option value="2" {% ifequal illcase.yuantangguang_chuhan_qingkuang 2%}selected="true"{% endifequal %}>微汗</option>
+                <option value="3" {% ifequal illcase.yuantangguang_chuhan_qingkuang 3%}selected="true"{% endifequal %}>正常</option>
+                <option value="4" {% ifequal illcase.yuantangguang_chuhan_qingkuang 4%}selected="true"{% endifequal %}>大汗</option>
+                <option value="5" {% ifequal illcase.yuantangguang_chuhan_qingkuang 5%}selected="true"{% endifequal %}>禁用</option>
+            </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>敷药情况：</label>
+            <label for=""><input type="checkbox" name="yuantangguang_fuyao_qingkuang" value="1" {% if '1' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}checked="true"{% endif %}/>无</label>
+            <label for=""><input type="checkbox" name="yuantangguang_fuyao_qingkuang" value="2" {% if '2' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />腿部</label>
+            <label for=""><input type="checkbox" name="yuantangguang_fuyao_qingkuang" value="3" {% if '3' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />腹部关元处</label>
+            <label for=""><input type="checkbox" name="yuantangguang_fuyao_qingkuang" value="4" {% if '4' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />背部</label>
+        </div>
+    </div>
+
+    <div class="submit form-group">
+        <div class="form-control">
+            <input type="button" value="返回" onclick="history.go(-1);"/>
+        </div>
+        <div class="form-control">
+            <input type="submit" value="保存" />
+        </div>
+    </div>
+
+    </form>
+
+    </div>
+{% endblock %}
+
+
+
