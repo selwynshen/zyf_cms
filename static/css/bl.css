@@ -92,6 +92,10 @@ h2{
     background-color: #ee4f3c;
 }
 .inset{
-        margin-left: -18px;
+    margin-left: -18px;
+    margin-right: 15px;
+}
+.insetBig{
+    margin-left: -32px;
     margin-right: 15px;
 }

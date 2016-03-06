@@ -38,7 +38,7 @@
     <file path="$PROJECT_DIR$/../GoodsRecommend/templates/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399898591464" ignored="false" />
     <file path="/base.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1406526660918" ignored="false" />
     <file path="$PROJECT_DIR$/../GoodsRecommend/templates/admin/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399871958141" ignored="false" />
-    <file path="/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456563697317" ignored="false" />
+    <file path="/index.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457266552442" ignored="false" />
     <file path="/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456571288443" ignored="false" />
     <file path="$PROJECT_DIR$/../GoodsRecommend/templates/admin/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399867695114" ignored="false" />
     <file path="$PROJECT_DIR$/../GoodsRecommend/templates/login.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1399868329541" ignored="false" />
@@ -88,7 +88,7 @@
     <file path="/user_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416468110514" ignored="false" />
     <file path="/role_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1400912340619" ignored="false" />
     <file path="/xlrd_util.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448780530117" ignored="false" />
-    <file path="/fragment.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457101419087" ignored="false" />
+    <file path="/fragment.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457267139020" ignored="false" />
     <file path="/accesspermission.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416470008887" ignored="false" />
     <file path="/region_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416535761069" ignored="false" />
     <file path="/region_add.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401150951635" ignored="false" />
@@ -117,11 +117,11 @@
     <file path="D:/dingcan/dingcan/templates/orderDetail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401769950649" ignored="false" />
     <file path="/detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401772538239" ignored="false" />
     <file path="/data_update.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401773165392" ignored="false" />
-    <file path="/actions.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457102123613" ignored="false" />
+    <file path="/actions.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457263906124" ignored="false" />
     <file path="/spa_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416795218403" ignored="false" />
     <file path="/pa_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417657824080" ignored="false" />
     <file path="D:/dingcan/dingcan/medias/resources/js/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401953516645" ignored="false" />
-    <file path="/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417755463764" ignored="false" />
+    <file path="/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457266380612" ignored="false" />
     <file path="D:/dingcan/dingcan/templates/userOrders.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401789040258" ignored="false" />
     <file path="D:/dingcan/dingcan/templates/menu - 副本.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1401789131879" ignored="false" />
     <file path="/ha_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417598980325" ignored="false" />
@@ -288,7 +288,7 @@
     <file path="/map.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416818114831" ignored="false" />
     <file path="/pa_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416820507080" ignored="false" />
     <file path="/ha_verify_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1417006710356" ignored="false" />
-    <file path="/custom_tags.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457017122107" ignored="false" />
+    <file path="/custom_tags.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457250191538" ignored="false" />
     <file path="/carbon_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416914272921" ignored="false" />
     <file path="/carbon_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1416905193661" ignored="false" />
     <file path="/task_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456668201968" ignored="false" />
@@ -350,17 +350,17 @@
     <file path="/cookbook_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1448809512399" ignored="false" />
     <file path="/user_manage.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456570760390" ignored="false" />
     <file path="/shop_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456658201875" ignored="false" />
-    <file path="/shop_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456657408558" ignored="false" />
+    <file path="/shop_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457188677349" ignored="false" />
     <file path="/request_context.py" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456572969710" ignored="false" />
     <file path="/shop_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456574411735" ignored="false" />
     <file path="/userinfo_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456746055380" ignored="false" />
     <file path="/userinfo_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456661088247" ignored="false" />
-    <file path="/userinfo_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456927378615" ignored="false" />
+    <file path="/userinfo_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457188685993" ignored="false" />
     <file path="$PROJECT_DIR$/../CarbonEmission/static/js/index.js" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456669622909" ignored="false" />
     <file path="$PROJECT_DIR$/../CarbonEmission/templates/government/base-iframe.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1456669604399" ignored="false" />
     <file path="/illcase_list.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457096396641" ignored="false" />
-    <file path="/illcase_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457096256100" ignored="false" />
-    <file path="/illcase_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457097162156" ignored="false" />
+    <file path="/illcase_manage.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457252843585" ignored="false" />
+    <file path="/illcase_detail.html" changelist="2d6bec1a-5fc0-49d3-a178-27059bf4a1c8" time="1457266962436" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,13 +382,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="illcase_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/illcase_list.html">
+      <file leaf-file-name="illcase_detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/illcase_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-2.6285715">
-              <folding>
-                <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="506" column="102" selection-start="21555" selection-end="21555" vertical-scroll-proportion="-7.3428574">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="illcase_manage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/illcase_manage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="380" column="34" selection-start="23930" selection-end="23930" vertical-scroll-proportion="33.514286">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -396,43 +403,16 @@
       <file leaf-file-name="actions.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="0" selection-start="6907" selection-end="6907" vertical-scroll-proportion="0.513834">
+            <state line="223" column="65" selection-start="7414" selection-end="7414" vertical-scroll-proportion="2.8768768">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="format_helper.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/format_helper.py">
+      <file leaf-file-name="reflect_util.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/reflect_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="36" selection-end="72" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="illcase_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/illcase_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-6.6857142">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_manage.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyf_cms/user_manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="135" selection-end="148" vertical-scroll-proportion="0.0">
+            <state line="8" column="46" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -441,16 +421,25 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zyf_cms/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="869" selection-end="878" vertical-scroll-proportion="0.0">
+            <state line="80" column="66" selection-start="2815" selection-end="2816" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shop_manage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/shop_manage.html">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="751" selection-end="759" vertical-scroll-proportion="-3.7142856">
+            <state line="9" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="65" selection-start="2186" selection-end="2186" vertical-scroll-proportion="-2.9714286">
               <folding />
             </state>
           </provider>
@@ -466,28 +455,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/admin/task_list.html" />
-        <option value="$PROJECT_DIR$/templates/admin/shop_list.html" />
-        <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/templates/admin/userinfo_detail.html" />
         <option value="$PROJECT_DIR$/common/common_action.py" />
         <option value="$PROJECT_DIR$/common/auth.py" />
         <option value="$PROJECT_DIR$/templates/admin/base-iframe.html" />
         <option value="$PROJECT_DIR$/admin/urls.py" />
         <option value="$PROJECT_DIR$/admin/views.py" />
+        <option value="$PROJECT_DIR$/templates/admin/illcase_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/shop_manage.html" />
         <option value="$PROJECT_DIR$/templates/admin/userinfo_manage.html" />
         <option value="$PROJECT_DIR$/zyf_cms/templatetags/custom_tags.py" />
-        <option value="$PROJECT_DIR$/zyf_cms/models.py" />
         <option value="$PROJECT_DIR$/templates/admin/illcase_manage.html" />
-        <option value="$PROJECT_DIR$/templates/admin/illcase_list.html" />
+        <option value="$PROJECT_DIR$/zyf_cms/models.py" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/admin/illcase_detail.html" />
         <option value="$PROJECT_DIR$/admin/actions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-70" />
-    <option name="y" value="304" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1381" />
     <option name="height" value="747" />
   </component>
@@ -517,7 +506,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -752,6 +740,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -775,8 +764,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ProjData\Pycharm\zyf_cms\static\js" />
       <recent name="D:\ProjData\Pycharm\zyf_cms\static\css" />
+      <recent name="D:\ProjData\Pycharm\zyf_cms\static\js" />
       <recent name="D:\ProjData\Pycharm\zyf_cms\templates\admin" />
       <recent name="D:\ProjData\Pycharm\zyf_cms\admin" />
       <recent name="D:\ProjData\Pycharm\zyf_cms\static\image" />
@@ -1088,15 +1077,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-70" y="304" width="1381" height="747" extended-state="1" />
+    <frame x="-8" y="-8" width="1381" height="747" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21124361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25383306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.53406996" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.590985" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18181819" sideWeight="0.49744463" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5025554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18181819" sideWeight="0.6337308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36626917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.39146566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03577513" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4241908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1176,46 +1165,41 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="310" />
+      <option name="time" value="312" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/common/base-template.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin/shop_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="13.571428">
+        <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/common_action.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/shop_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/shop_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/userinfo_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/userinfo_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="567" selection-end="583" vertical-scroll-proportion="-2.9714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyf_cms/templatetags/custom_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyf_cms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="869" selection-end="878" vertical-scroll-proportion="0.0">
+        <state line="5" column="36" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2534113">
           <folding />
         </state>
       </provider>
@@ -1227,69 +1211,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/illcase_list.html">
+    <entry file="file://$PROJECT_DIR$/zyf_cms/templatetags/custom_tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="-2.6285715">
-          <folding>
-            <element signature="n#style#0;n#label#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/shop_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="-0.0">
+        <state line="28" column="38" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/illcase_manage.html">
+    <entry file="file://$PROJECT_DIR$/common/reflect_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="85" selection-end="190" vertical-scroll-proportion="-2.2285714">
-          <folding>
-            <element signature="n#style#0;n#select#0;n#label#0;n#div#7;n#div#7;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="8" column="46" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/details.js">
+    <entry file="file://$PROJECT_DIR$/static/js/iframe-adapter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="34" selection-start="162" selection-end="162" vertical-scroll-proportion="0.49726775">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/shop_manage.html">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="751" selection-end="759" vertical-scroll-proportion="-3.7142856">
+        <state line="70" column="65" selection-start="2186" selection-end="2186" vertical-scroll-proportion="-2.9714286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyf_cms/user_manage.py">
+    <entry file="file://$PROJECT_DIR$/zyf_cms/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="135" selection-end="148" vertical-scroll-proportion="0.0">
+        <state line="80" column="66" selection-start="2815" selection-end="2816" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/illcase_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-6.6857142">
+        <state line="506" column="102" selection-start="21555" selection-end="21555" vertical-scroll-proportion="-7.3428574">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/format_helper.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/illcase_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="36" selection-end="72" vertical-scroll-proportion="0.0">
+        <state line="380" column="34" selection-start="23930" selection-end="23930" vertical-scroll-proportion="33.514286">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="0" selection-start="6907" selection-end="6907" vertical-scroll-proportion="0.513834">
+        <state line="223" column="65" selection-start="7414" selection-end="7414" vertical-scroll-proportion="2.8768768">
           <folding />
         </state>
       </provider>

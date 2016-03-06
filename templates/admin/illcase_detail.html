@@ -6,23 +6,7 @@
     <link rel="stylesheet" href="/static/css/details.css">
 {% endblock %}
 {% block content %}
-    <div class="container" id="main" style="">
-
-    <div id="linkList">
-        <ul>
-            <li><a href="#info">基本信息</a></li>
-            <li><a href="#statu">精神状态</a></li>
-            <li><a href="#bowler2">二便情况</a></li>
-            <li><a href="#sleep">睡眠质量</a></li>
-            <li><a href="#st">看舌苔</a></li>
-            <li><a href="#eye">看眼睛</a></li>
-            <li><a href="#legs">腿脚情况</a></li>
-            <li><a href="#med">自身服用药物</a></li>
-            <li><a href="#fmed">辅助药物使用</a></li>
-            <li><a href="#meal">饮食情况</a></li>
-            <li><a href="#ll">理疗情况</a></li>
-        </ul>
-    </div>
+    <div class="container" id="main">
 
     <!--基本信息-->
     <div id="info" class="sl">
@@ -30,28 +14,39 @@
             <caption>基本信息</caption>
             <tbody>
             <tr>
-                <td class="col-sm-2">姓名</td>
-                <td class="col-sm-8"></td>
+                <td class="col-md-2">病例名称</td>
+                <td class="col-md-10">{{ illcase.case_name }}</td>
             </tr>
             <tr>
-                <td class="col-lg-2">性别</td>
-                <td class="col-lg-10"></td>
+                <td class="col-md-2">姓名</td>
+                <td class="col-md-10">{{ illcase.name }}</td>
             </tr>
             <tr>
-                <td class="col-lg-2">年龄</td>
-                <td class="col-lg-10"></td>
+                <td class="col-md-2">性别</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.gender 1%}
+                        男
+                    {% endifequal %}
+                    {% ifequal illcase.gender 0%}
+                        女
+                    {% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-2">入府血糖</td>
-                <td class="col-lg-10"></td>
+                <td class="col-md-2">年龄</td>
+                <td class="col-md-10">{{ illcase.age }}</td>
             </tr>
             <tr>
-                <td class="col-lg-2">入府血压</td>
-                <td class="col-lg-10"></td>
+                <td class="col-md-2">入府血糖</td>
+                <td class="col-md-10">{{ illcase.xuetang }}</td>
             </tr>
             <tr>
-                <td class="col-lg-2">入府时段</td>
-                <td class="col-lg-10"></td>
+                <td class="col-md-2">入府血压</td>
+                <td class="col-md-10">{{ illcase.xueya }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">入府时段</td>
+                <td class="col-md-10">{{ illcase.shiduan }}</td>
             </tr>
             </tbody>
         </table>
@@ -63,8 +58,13 @@
             <caption>精神状态</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">疲劳感</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">疲劳感</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.pilaogan 1%}是{% endifequal %}
+                    {% ifequal illcase.pilaogan 2%}否{% endifequal %}
+                    {% ifequal illcase.pilaogan 3%}略微{% endifequal %}
+
+                </td>
             </tr>
             </tbody>
         </table>
@@ -76,36 +76,60 @@
             <caption>二便情况</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">大便</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">大便</td>
+                <td class="col-md-10">{{ illcase.dabian_cishu }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">成形</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">成形</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.dabian_zhuangtai|get_checkbox_list %}成形{% endif %}
+                    {% if '2' in illcase.dabian_zhuangtai|get_checkbox_list %}不成形{% endif %}
+                    {% if '3' in illcase.dabian_zhuangtai|get_checkbox_list %}顺畅{% endif %}
+                    {% if '4' in illcase.dabian_zhuangtai|get_checkbox_list %}便不尽{% endif %}
+                    {% if '5' in illcase.dabian_zhuangtai|get_checkbox_list %}气味恶臭{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">腹痛</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">腹痛</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.futong 1%}有{% endifequal %}
+                    {% ifequal illcase.futong 2%}无{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">小便白天</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">小便白天</td>
+                <td class="col-md-10">{{ illcase.xiaobian_baitian }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">小便夜里</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">小便夜里</td>
+                <td class="col-md-10">{{ illcase.xiaobian_wanshang }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">泡沫</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">泡沫</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.paomo 1%}多{% endifequal %}
+                    {% ifequal illcase.paomo 2%}少{% endifequal %}
+                    {% ifequal illcase.paomo 3%}一般{% endifequal %}
+                    {% ifequal illcase.paomo 3%}无{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">灼痛感</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">灼痛感</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.zhuotonggan 1%}有{% endifequal %}
+                    {% ifequal illcase.zhuotonggan 2%}无{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">小便颜色</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">小便颜色</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.xiaobian_yanse 1%}清{% endifequal %}
+                    {% ifequal illcase.xiaobian_yanse 2%}浊{% endifequal %}
+                    {% ifequal illcase.xiaobian_yanse 3%}浅黄{% endifequal %}
+                    {% ifequal illcase.xiaobian_yanse 4%}深黄{% endifequal %}
+
+
+                </td>
             </tr>
             </tbody>
         </table>
@@ -117,12 +141,19 @@
             <caption>睡眠质量</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">失眠梦多不易入睡</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">睡眠情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.shuimian_zhiliang 1%}失眠多梦不易入睡{% endifequal %}
+                    {% ifequal illcase.shuimian_zhiliang 2%}做梦醒来就忘不困{% endifequal %}
+                    {% ifequal illcase.shuimian_zhiliang 3%}多梦醒来精神疲劳{% endifequal %}
+                    {% ifequal illcase.shuimian_zhiliang 4%}有凌晨醒的现象{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">睡眠时间</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">睡眠时间</td>
+                <td class="col-md-10">
+                    {{ illcase.shuimian_shijian_kaishi }} 至 {{ illcase.shuimian_shijian_jieshu }}
+                </td>
             </tr>
             </tbody>
         </table>
@@ -134,20 +165,45 @@
             <caption>看舌苔</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">舌质</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">舌质</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.shezhi|get_checkbox_list %}肥大{% endif %}
+                    {% if '2' in illcase.shezhi|get_checkbox_list %}瘦小{% endif %}
+                    {% if '3' in illcase.shezhi|get_checkbox_list %}有齿痕{% endif %}
+                    {% if '4' in illcase.shezhi|get_checkbox_list %}舌中有裂纹{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">医疗过程中齿痕裂纹</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">医疗过程中齿痕裂纹</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.chiheng_jianqing 1%}是{% endifequal %}
+                    {% ifequal illcase.chiheng_jianqing 2%}否{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">舌色</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">舌色</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.shese|get_checkbox_list %}黄腻{% endif %}
+                    {% if '2' in illcase.shese|get_checkbox_list %}白苔{% endif %}
+                    {% if '3' in illcase.shese|get_checkbox_list %}黑苔{% endif %}
+                    {% if '4' in illcase.shese|get_checkbox_list %}灰苔{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">舌苔</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">舌苔</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.shetai|get_checkbox_list %}黄腻{% endif %}
+                    {% if '2' in illcase.shetai|get_checkbox_list %}白苔{% endif %}
+                    {% if '3' in illcase.shetai|get_checkbox_list %}黑苔{% endif %}
+                    {% if '4' in illcase.shetai|get_checkbox_list %}灰苔{% endif %}
+                    {% if '5' in illcase.shetai|get_checkbox_list %}苔薄{% endif %}
+                    {% if '6' in illcase.shetai|get_checkbox_list %}苔厚{% endif %}
+                    {% if '7' in illcase.shetai|get_checkbox_list %}润{% endif %}
+                    {% if '8' in illcase.shetai|get_checkbox_list %}燥{% endif %}
+                    {% if '9' in illcase.shetai|get_checkbox_list %}腐{% endif %}
+                    {% if '10' in illcase.shetai|get_checkbox_list %}腻{% endif %}
+                    {% if '11' in illcase.shetai|get_checkbox_list %}剥落苔{% endif %}
+                </td>
             </tr>
             </tbody>
         </table>
@@ -159,12 +215,18 @@
             <caption>看眼睛</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">有血丝</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">有血丝</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.yanjing|get_checkbox_list %}有血丝{% endif %}
+                    {% if '2' in illcase.yanjing|get_checkbox_list %}有黄斑{% endif %}
+                    {% if '3' in illcase.yanjing|get_checkbox_list %}干涩{% endif %}
+                    {% if '4' in illcase.yanjing|get_checkbox_list %}模糊{% endif %}
+                    {% if '5' in illcase.yanjing|get_checkbox_list %}不适{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">备注</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">备注</td>
+                <td class="col-md-10">{{ illcase.yanjing_beizhu }}</td>
             </tr>
             </tbody>
         </table>
@@ -176,60 +238,20 @@
             <caption>腿脚情况</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">正常</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">腿脚情况</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.tuijiao_qingkuang|get_checkbox_list %}正常{% endif %}
+                    {% if '2' in illcase.tuijiao_qingkuang|get_checkbox_list %}有麻木感{% endif %}
+                    {% if '3' in illcase.tuijiao_qingkuang|get_checkbox_list %}胀感{% endif %}
+                    {% if '4' in illcase.tuijiao_qingkuang|get_checkbox_list %}冰凉{% endif %}
+                    {% if '5' in illcase.tuijiao_qingkuang|get_checkbox_list %}疼痛{% endif %}
+                    {% if '6' in illcase.tuijiao_qingkuang|get_checkbox_list %}刺痛{% endif %}
+                    {% if '7' in illcase.tuijiao_qingkuang|get_checkbox_list %}抽搐{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">口服降糖药名称：</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">有血丝</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">剂量</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">使用情况</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">注射胰岛素名称</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">剂量</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">使用情况</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">降压药名称</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">剂量</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">使用情况</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">降脂药名称</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">剂量</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">使用情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">部位</td>
+                <td class="col-md-10">{{ illcase.tuijiao_buwei }}</td>
             </tr>
             </tbody>
         </table>
@@ -241,13 +263,79 @@
             <caption>自身服用药物</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">民乐茶</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">口服降糖药名称：</td>
+                <td class="col-md-10">{{ illcase.jiangtangyao_mingcheng }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">饮用情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">剂量</td>
+                <td class="col-md-10">{{ illcase.jiangtangyao_jiliang }}</td>
             </tr>
+            <tr>
+                <td class="col-md-2">使用情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.jiangtangyao_zhuangtai 1%}正常{% endifequal %}
+                    {% ifequal illcase.jiangtangyao_zhuangtai 2%}减药{% endifequal %}
+                    {% ifequal illcase.jiangtangyao_zhuangtai 3%}停用{% endifequal %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">注射胰岛素名称</td>
+                <td class="col-md-10">{{ illcase.yidaosu__mingcheng }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">剂量</td>
+                <td class="col-md-10">{{ illcase.yidaosu_jiliang }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">使用时段</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.yidaosu_shiyong_qingkuang 1%}早{% endifequal %}
+                    {% ifequal illcase.yidaosu_shiyong_qingkuang 2%}中{% endifequal %}
+                    {% ifequal illcase.yidaosu_shiyong_qingkuang 3%}晚{% endifequal %}
+                    {% ifequal illcase.yidaosu_shiyong_qingkuang 4%}睡前{% endifequal %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">使用情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.yidaosu_zhuangtai 1%}正常{% endifequal %}
+                    {% ifequal illcase.yidaosu_zhuangtai 2%}减药{% endifequal %}
+                    {% ifequal illcase.yidaosu_zhuangtai 3%}停用{% endifequal %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">降压药名称</td>
+                <td class="col-md-10">{{ illcase.jiangyayao_mingcheng }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">剂量</td>
+                <td class="col-md-10">{{ illcase.jiangyayao_jiliang }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">使用情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.jiangyayao_zhuangtai 1%}正常{% endifequal %}
+                    {% ifequal illcase.jiangyayao_zhuangtai 2%}减药{% endifequal %}
+                    {% ifequal illcase.jiangyayao_zhuangtai 3%}停用{% endifequal %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">降脂药名称</td>
+                <td class="col-md-10">{{ illcase.jiangzhiyao_mingcheng }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">剂量</td>
+                <td class="col-md-10">{{ illcase.jiangzhiyao_jiliang }}</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">使用情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.jiangzhiyao_zhuangtai 1%}正常{% endifequal %}
+                    {% ifequal illcase.jiangzhiyao_zhuangtai 2%}减药{% endifequal %}
+                    {% ifequal illcase.jiangzhiyao_zhuangtai 3%}停用{% endifequal %}
+                </td>
+            </tr>
+
             </tbody>
         </table>
     </div>
@@ -258,20 +346,53 @@
             <caption>辅助药物使用情况</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">贴敷的穴位</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">民乐茶</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.minyuecha|get_checkbox_list %}1号{% endif %}
+                    {% if '2' in illcase.minyuecha|get_checkbox_list %}2号{% endif %}
+                    {% if '3' in illcase.minyuecha|get_checkbox_list %}中号{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖贴的使用情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">饮用情况</td>
+                <td class="col-md-10">{{ illcase.minyuecha_yinyong_qingkuang }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">金匮肾气丸</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">五子散</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.wuzisan|get_checkbox_list %}1号{% endif %}
+                    {% if '2' in illcase.wuzisan|get_checkbox_list %}2号{% endif %}
+                    {% if '3' in illcase.wuzisan|get_checkbox_list %}3号{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">服用情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">服用情况</td>
+                <td class="col-md-10">一天{{ illcase.wuzisan_yitian_cishu }}次 一次{{ illcase.wuzisan_yici }}粒</td>
+            </tr>
+            <tr>
+                <td class="col-md-2">远糖贴贴敷的穴位</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}会阴{% endif %}
+                    {% if '2' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}关元{% endif %}
+                    {% if '3' in illcase.yuantangtie_tiefu_xuewei|get_checkbox_list %}涌泉{% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">药物</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.fuzhuyaowu|get_checkbox_list %}金匮肾气丸{% endif %}
+                    {% if '2' in illcase.fuzhuyaowu|get_checkbox_list %}六味地黄丸{% endif %}
+                    {% if '3' in illcase.fuzhuyaowu|get_checkbox_list %}直播地黄丸{% endif %}
+                    {% if '4' in illcase.fuzhuyaowu|get_checkbox_list %}人参归脾丸{% endif %}
+                    {% if '5' in illcase.fuzhuyaowu|get_checkbox_list %}肾源{% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-2">服用情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.fuzhuyaowu_fuyong_qingkuang 1%}正常剂量{% endifequal %}
+                    {% ifequal illcase.fuzhuyaowu_fuyong_qingkuang 2%}翻倍剂量{% endifequal %}
+                </td>
             </tr>
             </tbody>
         </table>
@@ -283,20 +404,23 @@
             <caption>饮食情况</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">遵循远糖食谱</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">遵循远糖食谱</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.zhuixun_yuantang_shipu 1%}是{% endifequal %}
+                    {% ifequal illcase.zhuixun_yuantang_shipu 2%}否{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">早餐情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">早餐情况</td>
+                <td class="col-md-10">{{ illcase.zaocan_qingkuang }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">午餐情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">午餐情况</td>
+                <td class="col-md-10">{{ illcase.wucan_qingkuang }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">晚餐情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">晚餐情况</td>
+                <td class="col-md-10">{{ illcase.wancan_qingkuang }}</td>
             </tr>
             </tbody>
         </table>
@@ -308,48 +432,70 @@
             <caption>理疗情况</caption>
             <tbody>
             <tr>
-                <td class="col-lg-4">远糖法:腹部推拿</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖法</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.yuantangfa 1%}腹部推拿{% endifequal %}
+                    {% ifequal illcase.yuantangfa 2%}经络疏通{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖法:筋络疏通</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖术:泡脚温度</td>
+                <td class="col-md-10">{{ illcase.yuantangshu_paojiao_wendu }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖术:泡脚温度</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖术:时间</td>
+                <td class="col-md-10">{{ illcase.yuantangshu_shijian }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖术:时间</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖术:出汗情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.yuantangshu_chuhan_qingkuang 1%}不出汗{% endifequal %}
+                    {% ifequal illcase.yuantangshu_chuhan_qingkuang 2%}微汗{% endifequal %}
+                    {% ifequal illcase.yuantangshu_chuhan_qingkuang 3%}正常{% endifequal %}
+                    {% ifequal illcase.yuantangshu_chuhan_qingkuang 4%}大汗{% endifequal %}
+                    {% ifequal illcase.yuantangshu_chuhan_qingkuang 5%}禁用{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖术:出汗情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:舱的温度</td>
+                <td class="col-md-10">{{ illcase.yuantangguang_chuang_wendu }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖光:舱的温度</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:毯的温度</td>
+                <td class="col-md-10">{{ illcase.yuantangguang_tan_wendu }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖光:毯的温度</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:时间</td>
+                <td class="col-md-10">{{ illcase.yuantangguang_shijian }}</td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖光:时间</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:部位</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.yuantangguang_buwei|get_checkbox_list %}腿{% endif %}
+                    {% if '2' in illcase.yuantangguang_buwei|get_checkbox_list %}腹部{% endif %}
+                    {% if '3' in illcase.yuantangguang_buwei|get_checkbox_list %}肚脐关元处{% endif %}
+                    {% if '4' in illcase.yuantangguang_buwei|get_checkbox_list %}背部{% endif %}
+                    {% if '5' in illcase.yuantangguang_buwei|get_checkbox_list %}凶十二锥以下{% endif %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖光:部位</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:出汗情况</td>
+                <td class="col-md-10">
+                    {% ifequal illcase.yuantangguang_chuhan_qingkuang 1%}不出汗{% endifequal %}
+                    {% ifequal illcase.yuantangguang_chuhan_qingkuang 2%}微汗{% endifequal %}
+                    {% ifequal illcase.yuantangguang_chuhan_qingkuang 3%}正常{% endifequal %}
+                    {% ifequal illcase.yuantangguang_chuhan_qingkuang 4%}大汗{% endifequal %}
+                    {% ifequal illcase.yuantangguang_chuhan_qingkuang 5%}禁用{% endifequal %}
+                </td>
             </tr>
             <tr>
-                <td class="col-lg-4">远糖光:出汗情况</td>
-                <td class="col-lg-8"></td>
-            </tr>
-            <tr>
-                <td class="col-lg-4">远糖光:敷药情况</td>
-                <td class="col-lg-8"></td>
+                <td class="col-md-2">远糖光:敷药情况</td>
+                <td class="col-md-10">
+                    {% if '1' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}无{% endif %}
+                    {% if '2' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}腿部{% endif %}
+                    {% if '3' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}腹部关元处{% endif %}
+                    {% if '4' in illcase.yuantangguang_fuyao_qingkuang|get_checkbox_list %}背部{% endif %}
+                </td>
             </tr>
             </tbody>
         </table>
@@ -358,14 +504,13 @@
     <form>
         <div class="submit form-group">
             <div class="form-control">
-                <input type="button" value="返回" />
+                <input class="btn btn-danger btn-lg" type="button" value="返回" onclick="history.go(-1);"/>
             </div>
         </div>
     </form>
+
     </div>
 {% endblock %}
 
-{% block js %}
-    <script type="text/javascript" src="/static/js/details.js"></script>
-{% endblock %}
+
 

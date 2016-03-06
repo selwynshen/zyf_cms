@@ -6,14 +6,14 @@ a{text-decoration:none; cursor: pointer;}
 img{border: 0px;}
 i,em{font-style:normal;}
 
-.bigBox{
+/*.bigBox{
 	width: 1200px;
 	margin: 0 auto;
-}
-.container{
+}*/
+/*.container{
 	width: 100%;
 	height: 100%;
-}
+}*/
 .container img{
 	width: 100%;
 	position: absolute;

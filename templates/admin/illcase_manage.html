@@ -1,4 +1,4 @@
-{% extends 'common/base-template.html' %}
+{% extends 'admin/base-template.html' %}
 {% load custom_tags %}
 {% block css %}
     <link rel="stylesheet" href="/static/css/main.css">
@@ -12,7 +12,7 @@
           class="form-horizontal form-groups-bordered">
     {% csrf_token %}
     <input type="hidden" name="id" value="{{ illcase.id }}" />
-    <div class="tit">
+    <div class="tit form-group">
         <div class="form-control">
             <label for="">病例名称 <input type="text" class="ipt-middle" name="case_name" value="{{ illcase.case_name }}"/></label>
         </div>
@@ -178,7 +178,7 @@
             <label for=""><input type="checkbox" name="shetai" value="8" {% if '8' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />燥</label>
             <label for=""><input type="checkbox" name="shetai" value="9" {% if '9' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />腐</label>
             <label for=""><input type="checkbox" name="shetai" value="10" {% if '10' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />腻</label>
-            <label for=""><input type="checkbox" name="shetai" value="10" {% if '10' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />剥落苔</label>
+            <label for=""><input type="checkbox" name="shetai" value="11" {% if '11' in illcase.shetai|get_checkbox_list %}checked="true"{% endif %} />剥落苔</label>
         </div>
     </div>
 
@@ -205,7 +205,7 @@
             <label>正常：</label>
             <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="1" {% if '1' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />正常</label>
             <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="2" {% if '2' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />有麻木感</label>
-            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="3" {% if '3' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />长敢</label>
+            <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="3" {% if '3' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />胀感</label>
             <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="4" {% if '4' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />冰凉</label>
             <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="5" {% if '5' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />疼痛</label>
             <label for=""><input type="checkbox" name="tuijiao_qingkuang" value="6" {% if '6' in illcase.tuijiao_qingkuang|get_checkbox_list %}checked="true"{% endif %} />刺痛</label>
@@ -435,10 +435,10 @@
 
     <div class="submit form-group">
         <div class="form-control">
-            <input type="button" value="返回" onclick="history.go(-1);"/>
+            <input type="button" class="btn btn-danger btn-lg" value="返回" onclick="history.go(-1);"/>
         </div>
         <div class="form-control">
-            <input type="submit" value="保存" />
+            <input type="submit" class="btn btn-success btn-lg" value="保存" />
         </div>
     </div>
 

@@ -7,16 +7,16 @@ $(function(){
     }
 	/*sidebar-menu*/
     $("#main-menu  li.has-sub > a").bind("click",function(){
-        $(this).parent().toggleClass("opened").siblings().removeClass("opened");
+        $(this).parent().addClass("opened").siblings().removeClass("opened");
         $(this).parent().find("ul").eq(0).slideToggle("slow").parent().siblings().find("ul").slideUp("slow");
         //$(this).find('i').toggleClass('entypo-minus-circled').parent().parent().siblings().find("i").removeClass("entypo-minus-circled");
     });
-    $("#main-menu li.has-sub > ul > li > a").bind("click",function(){
+    /*$("#main-menu li.has-sub > ul > li > a").bind("click",function(){
 
           $(this).addClass("current").parent().siblings().find('a').removeClass("current");
         $(this).parents(".root-level").siblings().find("ul li a").removeClass("current");
         $(this).find('i').toggleClass('entypo-minus-circled').parent().parent().siblings().find("i").removeClass("entypo-minus-circled");
-    });
+    });*/
     $("#main-menu li.has-sub  > ul > li > ul >li >a").bind("click",function(){
         $(this).parent().parent().find("li a").removeClass("current");
         $(this).addClass("current");

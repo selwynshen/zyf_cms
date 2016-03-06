@@ -188,9 +188,41 @@ class IllCaseAction(Action):
         return IllCase.objects.filter(shop__in=shops)
 
     def wire_others(self,request,obj):
-        dabian_zhuangtai_list = request.POST.getlist("dabian_zhuangtai")
+        dabian_zhuangtai_list = request.POST.getlist("dabian_zhuangtai", [])
         obj.dabian_zhuangtai = ','.join(dabian_zhuangtai_list)
 
+        shezhi_list = request.POST.getlist('shezhi', [])
+        obj.shezhi = ','.join(shezhi_list)
+
+        shese_list = request.POST.getlist('shese', [])
+        obj.shese = ','.join(shese_list)
+
+        shetai_list = request.POST.getlist('shetai', [])
+        obj.shetai = ','.join(shetai_list)
+
+        yanjing_list = request.POST.getlist('yanjing', [])
+        obj.yanjing = ','.join(yanjing_list)
+
+        tuijiao_qingkuang_list = request.POST.getlist('tuijiao_qingkuang', [])
+        obj.tuijiao_qingkuang = ','.join(tuijiao_qingkuang_list)
+
+        minyuecha_list = request.POST.getlist('minyuecha', [])
+        obj.minyuecha = ','.join(minyuecha_list)
+
+        wuzisan_list = request.POST.getlist("wuzisan", [])
+        obj.wuzisan = ','.join(wuzisan_list)
+
+        yuantangtie_tiefu_xuewei_list = request.POST.getlist('yuantangtie_tiefu_xuewei', [])
+        obj.yuantangtie_tiefu_xuewei = ','.join(yuantangtie_tiefu_xuewei_list)
+
+        fuzhuyaowu_list = request.POST.getlist("fuzhuyaowu", [])
+        obj.fuzhuyaowu = ','.join(fuzhuyaowu_list)
+
+        yuantangguang_buwei_list = request.POST.getlist('yuantangguang_buwei', [])
+        obj.yuantangguang_buwei = ','.join(yuantangguang_buwei_list)
+
+        yuantangguang_fuyao_qingkuang_list = request.POST.getlist('yuantangguang_fuyao_qingkuang', [])
+        obj.yuantangguang_fuyao_qingkuang = ','.join(yuantangguang_fuyao_qingkuang_list)
 
         #设置店铺和填写人用户
         obj.user_info = get_user_info(request)

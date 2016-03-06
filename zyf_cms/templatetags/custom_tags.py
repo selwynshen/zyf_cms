@@ -18,5 +18,12 @@ def get_checkbox_list(val):
         return []
     return val.split(',')
 
+
+
+
+
+
+
+
 register.simple_tag(get_item)
 register.simple_tag(get_checkbox_list)
