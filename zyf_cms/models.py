@@ -40,6 +40,8 @@ class IllCase(BaseModel):
 
     user_info = models.ForeignKey(UserInfo)
 
+    remark = models.CharField(max_length=2000, null=True, default="")
+
 
     name = models.CharField(max_length=200)
     gender = models.IntegerField(default=1)

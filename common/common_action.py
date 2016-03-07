@@ -103,7 +103,7 @@ class Action(object):
             dict['flag'] = 1
             dict[self._module_name] = obj
         self.hook_detail(request,obj,dict)
-        return render_to_response('%s/%s' % (self.path_prefix,self.detail_to_render),dict)
+        return render_to_response('%s/%s' % (self.path_prefix,self.detail_to_render),dict,context_instance=RequestContext(request))
 
     def object_delete(self,request,objid):
         self.hook_delete(request,objid)

@@ -55,7 +55,9 @@
 								<td>
                                     <a href="/admin/illcase_detail/{{ illcase.id }}" class="btn btn-success">查看</a>
                                     <a href="/admin/illcase_update/{{ illcase.id }}" class="btn btn-info">编辑</a>
+                                    {% ifnotequal  request.session.user_group_id 3 %}
                                     <a href="javascript:;" class="btn btn-danger" onclick="beforeDelete('/admin/illcase_delete/{{ illcase.id }}')">删除</a>
+                                    {% endifnotequal %}
                                 </td>
 							</tr>
                         {% endfor %}

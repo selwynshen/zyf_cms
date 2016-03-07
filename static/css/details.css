@@ -20,7 +20,7 @@ body,html{
 #linkList ul li a{   
     color: #b2b3b4;
 }
-input[type="button"]{
+/*input[type="button"]{
     background-color: #ee4f3c;
     width: 100px;
     height: 50px;
@@ -29,7 +29,7 @@ input[type="button"]{
     border-radius: 3px;
     border: none;
     cursor: pointer;
-}
+}*/
 .form-control{
 	border: none;
     box-shadow: none;
@@ -37,4 +37,40 @@ input[type="button"]{
 }
 caption{
 	font-size: 16px;
+    line-height: 40px;
+}
+.s1{
+    margin-top: 30px;
+}
+
+.comment{
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+.comment .form-control{
+    padding: 0px;
+}
+.comment div[class*="col-"]{
+    padding: 0px;
+}
+.comment textarea{
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    text-indent: 35px;
+}
+.comment label{
+    color: #949494;
+    position: absolute;
+    margin: 5px;
+}
+.comment .saveComt{
+    margin-top: 70px;
+    color: #fff;
+    background-color: grey;
+}
+.comment .saveComt:hover{
+    background-color: #00a651;
 }

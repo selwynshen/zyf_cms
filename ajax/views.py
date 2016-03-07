@@ -7,8 +7,7 @@ from common.format_helper import string_to_ym_datetime,get_first_day,get_last_da
 from django.template import RequestContext
 from common.common_tools import get_report_model
 import simplejson
-from decimal import *
-import datetime
+from admin.actions import AdminManager
 
 @csrf_exempt
 def show_import_page(request):
@@ -16,3 +15,7 @@ def show_import_page(request):
     dict = {}
     dict['import_url'] = url
     return render_to_response('common/to_import.html',dict,context_instance=RequestContext(request))
+
+@csrf_exempt
+def manage_remark(request):
+    return AdminManager.get_ill_case_action().remark_manage(request)

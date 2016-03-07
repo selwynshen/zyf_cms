@@ -2,7 +2,7 @@
 {% load custom_tags %}
 {% block css %}
     <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/bl.css">
+
     <link rel="stylesheet" href="/static/css/details.css">
 {% endblock %}
 {% block content %}
@@ -500,16 +500,67 @@
             </tbody>
         </table>
     </div>
-
-    <form>
-        <div class="submit form-group">
+    {% ifnotequal  request.session.user_group_id 3 %}
+    <!--批阅-->
+    <div class="comment form-group rows">
+        <div class="col-md-11 col-lg-9">
             <div class="form-control">
-                <input class="btn btn-danger btn-lg" type="button" value="返回" onclick="history.go(-1);"/>
+                <label>批阅：</label>
+                <input type="hidden" name="id" id="caseId" value="{{ illcase.id }}">
+                <textarea id="remark">{% if illcase.remark %}{{ illcase.remark }}{% endif %}</textarea>
             </div>
         </div>
-    </form>
+        <div class="col-md-1 col-lg-2">
+            <div class="form-control">
+                <input class="saveComt btn " type="button" id="btnSubmit" value="提交" />
+            </div>
+        </div>
+    </div>
+    {% endifnotequal %}
+
+
+
+
+    <div class="submit form-group">
+        <div class="form-control">
+            <input class="btn btn-danger btn-lg" type="button" value="返回" onclick="history.go(-1);"/>
+        </div>
+    </div>
 
     </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function bindEvent()
+        {
+            {% ifnotequal  request.session.user_group_id 3 %}
+            $("#btnSubmit").click(function(){
+                var id = $("#caseId").val();
+                var remark = $("#remark").val();
+                if (id != null && remark !="")
+                {
+                    $.post("/ajax/manage_remark/",
+                            {
+                                'id':id,
+                                'remark':remark
+                            },
+                            function (data, textStatus){
+
+                            });
+                }
+
+            });
+            {% endifnotequal %}
+
+        }
+
+        $(function(){
+            {% ifnotequal  request.session.user_group_id 3 %}
+            bindEvent();
+            {% endifnotequal %}
+        });
+    </script>
 {% endblock %}
 
 

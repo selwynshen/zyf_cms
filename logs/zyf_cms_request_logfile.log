@@ -932,3 +932,20 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\django\db\models\fields\__init__.py", line 991, in get_prep_value
     return int(value)
 ValueError: invalid literal for int() with base 10: '2,3'
+WARNING 2016-03-07 20:30:25 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+WARNING 2016-03-07 20:30:28 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
+ERROR 2016-03-07 20:45:13 c:\python27\lib\site-packages\django\core\handlers\base.py base 212 Internal Server Error: /admin/illcase_manage/ status_code:500
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 21, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\common\auth.py", line 30, in decorator
+    return function(request, *args, **kwargs)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\views.py", line 134, in illcase_manage
+    return AdminManager.get_ill_case_action().object_manage(request)
+  File "D:/ProjData/Pycharm/zyf_cms\admin\actions.py", line 247, in object_manage
+    cur_date = string_to_ymd_datetime(cur_datetime.date())
+  File "D:/ProjData/Pycharm/zyf_cms\common\format_helper.py", line 24, in string_to_ymd_datetime
+    return datetime.datetime.strptime(str,'%Y-%m-%d')
+TypeError: must be string, not datetime.date

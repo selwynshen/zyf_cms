@@ -9,7 +9,9 @@ from django.template import RequestContext
 
 from common.auth import get_user_shops, get_user_shops_below, is_superadmin, get_head_shop_group_id, get_branch_shop_group_id, is_head_shop_user
 from zyf_cms.user_manage import get_user_shop, get_user_info
-from common.format_helper import string_to_date
+from common.format_helper import string_to_date, string_to_ymd_datetime, date_to_string
+from datetime import date
+import datetime
 
 class ShopAction(Action):
     model = Shop
@@ -228,6 +230,39 @@ class IllCaseAction(Action):
         obj.user_info = get_user_info(request)
         obj.shop = obj.user_info.shop
 
+
+    def object_manage(self,request):
+        objid = None
+        if request.method == 'POST':
+            objid = request.POST.get("id")
+
+
+        if objid and objid != '':
+            obj = self.model.objects.get(id=objid)
+            self.autowired(request,obj)
+            self.wire_others(request,obj)
+
+            #判断是否是同一天的，如果不是，则也是添加
+            cur_datetime = datetime.datetime.now()
+            cur_date = date_to_string(cur_datetime.date())
+            record_create_date = date_to_string(obj.create_time.date())
+            if (cur_date == record_create_date):
+                obj.save(False,True)
+            else:
+                obj.id = None
+                obj.create_time = cur_datetime
+                obj.case_name = '%s-%s'%(obj.case_name, cur_date)
+                obj.save(True)
+
+
+        else:
+            obj = self.model()
+            self.autowired(request,obj)
+            self.wire_others(request,obj)
+            obj.save(True)
+
+        return HttpResponseRedirect('/%s/%s/' % (self.path_prefix,self.list_to_redirect))
+
     def put_extra_object_list(self, request, dict):
         shops = get_user_shops_below(request)
         dict['shops'] = shops
@@ -254,6 +289,17 @@ class IllCaseAction(Action):
         shops = get_user_shops_below(request)
 
         return render_to_response('%s/%s' % (self.path_prefix,self.list_to_render),{self._module_name + 's':objs,'selected_date':report_date,'shop_id':int(shop_id), 'shops': shops},context_instance=RequestContext(request))
+
+    def remark_manage(self, request):
+        objid = request.POST.get('id')
+        remark = request.POST.get('remark')
+
+        obj = self.model.objects.get(id=objid)
+        if obj:
+            obj.remark = remark
+            obj.save(False,True)
+
+        return HttpResponse('')
 
 
 class AdminManager:
