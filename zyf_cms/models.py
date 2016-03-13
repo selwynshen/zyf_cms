@@ -45,7 +45,7 @@ class IllCase(BaseModel):
 
     name = models.CharField(max_length=200)
     gender = models.IntegerField(default=1)
-    age = models.IntegerField(blank=True, null=True)
+    age = models.IntegerField(blank=True, null=True, default=0)
 
 
     xuetang = models.CharField(max_length=50, null=True, default="")

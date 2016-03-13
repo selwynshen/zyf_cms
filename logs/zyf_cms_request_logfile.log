@@ -949,3 +949,4 @@ Traceback (most recent call last):
   File "D:/ProjData/Pycharm/zyf_cms\common\format_helper.py", line 24, in string_to_ymd_datetime
     return datetime.datetime.strptime(str,'%Y-%m-%d')
 TypeError: must be string, not datetime.date
+WARNING 2016-03-10 20:30:09 c:\python27\lib\site-packages\django\core\handlers\base.py base 146 Not Found: /favicon.ico status_code:404
