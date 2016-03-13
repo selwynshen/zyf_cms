@@ -2,7 +2,7 @@
 赵裔府 cms
 
 安装步骤：
-1. 安装python2.7，django1.5.1版本
+1. 安装python2.7，django1.5.1版本<br/>
 2. 安装mysql数据库
 3. 安装MySQL-python-1.2.3插件和django-pagination1.0.7分页插件
 4. 安装gunicorn（Python WSGI服务器） 建议安装nginx作为反向代理服务器
