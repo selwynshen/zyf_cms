@@ -4,7 +4,7 @@
 安装步骤：<br/>
 1. 安装python2.7，django1.5.1版本<br/>
 2. 安装mysql数据库<br/>
-3. 安装MySQL-python-1.2.3插件和django-pagination1.0.7分页插件<br/><br/>
+3. 安装MySQL-python-1.2.3插件和django-pagination1.0.7分页插件<br/>
 4. 安装gunicorn（Python WSGI服务器） 建议安装nginx作为反向代理服务器<br/>
 5. 下载项目源码，解压，进入到项目目录下，即zyf_cms文件夹下，进入zyf_cms子文件夹，
 修改settings.py里面DATABASES配置，使用新安装的mysql数据库的配置<br/>
