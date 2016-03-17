@@ -9,6 +9,8 @@ urlpatterns = patterns('',
 
     url(r'index/$', 'admin.views.index'),
 
+    url(r'home/$', 'admin.views.home'),
+
     # 店铺管理
     url(r'shop_list/$','admin.views.shop_list'),
     url(r'shop_manage/$','admin.views.shop_manage'),

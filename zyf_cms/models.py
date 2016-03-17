@@ -72,9 +72,9 @@ class IllCase(BaseModel):
     #0:未知 1:失眠多梦不易入睡  2:做梦醒来就忘不困 3： 多梦醒来精神疲劳 4： 有凌晨醒的现象
     shuimian_zhiliang = models.IntegerField(max_length=2, null=True, default=0)
 
-    shuimian_shijian_kaishi = models.IntegerField(max_length=2, null=True, default=0)
+    shuimian_shijian_kaishi = models.CharField(max_length=20, null=True, default='')
 
-    shuimian_shijian_jieshu = models.IntegerField(max_length=2, null=True, default=0)
+    shuimian_shijian_jieshu = models.CharField(max_length=20, null=True, default='')
     #0:未知 1:肥大  2:瘦小 3： 有齿痕 4： 舌中有裂纹
     shezhi = models.CharField(max_length=50, null=True, default="")
     #0:未知 1:是  2:否
