@@ -14,6 +14,10 @@ def login(request):
     return render_to_response('index.html')
 
 @csrf_exempt
+def detail(request):
+    return render_to_response('detail.html')
+
+@csrf_exempt
 def logout(request):
     user = getattr(request, 'user', None)
     user = None

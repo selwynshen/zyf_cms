@@ -57,10 +57,6 @@ def logout(request):
     return HttpResponseRedirect(LOGIN_URL)
 
 
-def home(request):
-    return render_to_response('admin/index.html')
-
-
 @auth_required
 @access_permitted
 def index(request):
