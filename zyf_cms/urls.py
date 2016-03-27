@@ -7,7 +7,7 @@ sys.setdefaultencoding('utf8')
 urlpatterns = patterns('',
     url(r'^$', 'zyf_cms.views.login',name='登陆'),
 
-    url(r'detail/', 'zyf_cms.views.detail',),
+    url(r'^detail/', 'zyf_cms.views.detail',),
 
     url(r'^logout/', 'zyf_cms.views.logout',name='注销'),
 

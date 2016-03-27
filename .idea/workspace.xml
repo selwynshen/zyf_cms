@@ -383,10 +383,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zyf_cms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+            <state line="9" column="46" selection-start="244" selection-end="244" vertical-scroll-proportion="0.55172414">
               <folding />
             </state>
           </provider>
@@ -401,10 +401,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="44" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.5542857">
+            <state line="80" column="0" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-59.42857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="7" selection-start="955" selection-end="955" vertical-scroll-proportion="-12.6285715">
               <folding />
             </state>
           </provider>
@@ -413,7 +422,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="34" column="71" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -422,7 +431,25 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="42" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0">
+            <state line="159" column="51" selection-start="4747" selection-end="4747" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_action.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/common_action.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="8" selection-start="3052" selection-end="3052" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="illcase_detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/illcase_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -431,7 +458,7 @@
       <file leaf-file-name="base-iframe.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/admin/base-iframe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.457143">
+            <state line="6" column="33" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -460,9 +487,9 @@
         <option value="$PROJECT_DIR$/admin/views.py" />
         <option value="$PROJECT_DIR$/admin/urls.py" />
         <option value="C:/Python27/Lib/site-packages/django/conf/urls/__init__.py" />
-        <option value="$PROJECT_DIR$/zyf_cms/urls.py" />
         <option value="$PROJECT_DIR$/zyf_cms/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/zyf_cms/urls.py" />
       </list>
     </option>
   </component>
@@ -587,42 +614,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyf_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyf_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyf_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyf_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -648,13 +639,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarbonEmission" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarbonEmission" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -798,27 +789,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <module name="zyf_cms" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -838,6 +808,27 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="zyf_cms" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -980,13 +971,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1381" height="747" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21124361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25383306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.53406996" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.590985" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22131148" sideWeight="0.72231686" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22131148" sideWeight="0.72231686" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27768314" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.39146566" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03577513" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1091,16 +1082,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/Validform_carbon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="27" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/common/base-iframe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="553" selection-end="553" vertical-scroll-proportion="-1.0777202" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/actions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="35" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" />
@@ -1140,21 +1121,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/base-iframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.457143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="42" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+        <state line="6" column="33" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1166,13 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyf_cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zyf_cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="12" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
@@ -1180,9 +1140,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="71" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="51" selection-start="4747" selection-end="4747" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common_action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="8" selection-start="3052" selection-end="3052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/illcase_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="44" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.5542857">
+        <state line="80" column="0" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-59.42857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="7" selection-start="955" selection-end="955" vertical-scroll-proportion="-12.6285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyf_cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="46" selection-start="244" selection-end="244" vertical-scroll-proportion="0.55172414">
           <folding />
         </state>
       </provider>
