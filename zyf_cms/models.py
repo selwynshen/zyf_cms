@@ -36,6 +36,9 @@ class UserInfo(BaseModel):
 class IllCase(BaseModel):
     case_name = models.CharField(max_length=200)
 
+    #病例来源 0: 未知 1: 来府理疗 2: 电话跟踪
+    source = models.IntegerField(max_length=2, null=True, default=0)
+
     shop = models.ForeignKey(Shop)
 
     user_info = models.ForeignKey(UserInfo)
@@ -47,11 +50,14 @@ class IllCase(BaseModel):
     gender = models.IntegerField(default=1)
     age = models.IntegerField(blank=True, null=True, default=0)
 
+    birthday = models.CharField(max_length=50, null=True, default="")
 
     xuetang = models.CharField(max_length=50, null=True, default="")
     xueya = models.CharField(max_length=50, null=True, default="")
 
     shiduan = models.CharField(max_length=50, null=True, default="")
+    # 1:怕冷畏寒 2:易受惊吓
+    quanshen_zhuangtai = models.CharField(max_length=50, null=True, default="")
     #0:未知   1:是  2:否  3：略微
     pilaogan = models.IntegerField(max_length=2, null=True, default=0)
 
@@ -69,8 +75,10 @@ class IllCase(BaseModel):
     zhuotonggan = models.IntegerField(max_length=2, null=True, default=0)
     #0:未知 1:清 2:浑浊 3： 浅黄 4： 深黄
     xiaobian_yanse = models.IntegerField(max_length=2, null=True, default=0)
+    niaogan = models.CharField(max_length=50, null=True, default="")
+
     #0:未知 1:失眠多梦不易入睡  2:做梦醒来就忘不困 3： 多梦醒来精神疲劳 4： 有凌晨醒的现象
-    shuimian_zhiliang = models.IntegerField(max_length=2, null=True, default=0)
+    shuimian_zhiliang = models.CharField(max_length=50, null=True, default="")
 
     shuimian_shijian_kaishi = models.CharField(max_length=20, null=True, default='')
 
@@ -84,6 +92,10 @@ class IllCase(BaseModel):
     #0:未知 1:黄腻  2:白苔 3： 黑苔 4： 灰苔 5： 苔薄 6： 苔厚 7： 润 8：燥 9：腐 10： 腻 11: 剥落苔
     shetai = models.CharField(max_length=50, null=True, default="")
 
+    shejian_beizhu = models.CharField(max_length=500, null=True, default="")
+    shezhong_beizhu = models.CharField(max_length=500, null=True, default="")
+    shegen_beizhu = models.CharField(max_length=500, null=True, default="")
+
     #0:未知 1:有血丝 2:有黄斑 3： 干涩 4： 模糊 5： 不适
     yanjing = models.CharField(max_length=50, null=True, default="")
     yanjing_beizhu = models.CharField(max_length=200, null=True, default="")
@@ -91,6 +103,11 @@ class IllCase(BaseModel):
     #0:未知 1： 正常 2:有麻木感 3:胀感 4： 冰凉5： 疼痛 6： 刺痛 7： 抽搐
     tuijiao_qingkuang = models.CharField(max_length=50, null=True, default="")
     tuijiao_buwei = models.CharField(max_length=200, null=True, default="")
+
+    shangjiao_qingkuang = models.CharField(max_length=100, null=True, default="")
+    zhongjiao_qingkuang = models.CharField(max_length=100, null=True, default="")
+    xiajiao_qingkuang = models.CharField(max_length=100, null=True, default="")
+    qita_wenzheng = models.CharField(max_length=1000, null=True, default="")
 
     jiangtangyao_mingcheng = models.CharField(max_length=200, null=True, default="")
     jiangtangyao_jiliang = models.CharField(max_length=200, null=True, default="")
@@ -131,14 +148,20 @@ class IllCase(BaseModel):
     #0:未知 1： 正常剂量 2:翻倍剂量
     fuzhuyaowu_fuyong_qingkuang = models.IntegerField(max_length=2, null=True, default=0)
 
+    yuantangshu_qitabeizhu = models.CharField(max_length=1000, null=True, default="")
+    yuantangshu_jutiyongliang = models.CharField(max_length=1000, null=True, default="")
+
     #0:未知 1： 是 2:否
     zhuixun_yuantang_shipu = models.IntegerField(max_length=2, null=True, default=0)
     zaocan_qingkuang = models.CharField(max_length=500, null=True, default="")
     wucan_qingkuang = models.CharField(max_length=500, null=True, default="")
     wancan_qingkuang = models.CharField(max_length=500, null=True, default="")
+    heshui_qingkuang = models.CharField(max_length=500, null=True, default="")
 
     #0:未知 1： 腹部推拿 2:经络疏通
     yuantangfa = models.IntegerField(max_length=2, null=True, default=0)
+    xuewei_beizhu = models.CharField(max_length=500, null=True, default="")
+
     yuantangshu_paojiao_wendu = models.IntegerField(max_length=5, null=True, default=0)
     yuantangshu_shijian = models.IntegerField(max_length=5, null=True, default=0)
     #0:未知 1： 不出汗 2:微汗 3： 正常 4： 大汗 5: 禁用
@@ -154,6 +177,7 @@ class IllCase(BaseModel):
     #0:未知 1：无 2：腿部 3： 腹部关元穴4： 背部
     yuantangguang_fuyao_qingkuang = models.CharField(max_length=50, null=True, default="")
 
+    liliaoqingkuang_qita = models.CharField(max_length=500, null=True, default="")
 
     class Meta:
         db_table = 'ill_case'

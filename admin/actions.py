@@ -190,8 +190,14 @@ class IllCaseAction(Action):
         return IllCase.objects.filter(shop__in=shops)
 
     def wire_others(self,request,obj):
+        quanshen_zhuangtai_list = request.POST.getlist("quanshen_zhuangtai", [])
+        obj.quanshen_zhuangtai = ','.join(quanshen_zhuangtai_list)
+
         dabian_zhuangtai_list = request.POST.getlist("dabian_zhuangtai", [])
         obj.dabian_zhuangtai = ','.join(dabian_zhuangtai_list)
+
+        niangan_list = request.POST.getlist("niaogan", [])
+        obj.niaogan = ','.join(niangan_list)
 
         shezhi_list = request.POST.getlist('shezhi', [])
         obj.shezhi = ','.join(shezhi_list)
@@ -207,6 +213,15 @@ class IllCaseAction(Action):
 
         tuijiao_qingkuang_list = request.POST.getlist('tuijiao_qingkuang', [])
         obj.tuijiao_qingkuang = ','.join(tuijiao_qingkuang_list)
+
+        shangjiao_qingkuang_list = request.POST.getlist('shangjiao_qingkuang', [])
+        obj.shangjiao_qingkuang = ','.join(shangjiao_qingkuang_list)
+
+        zhongjiao_qingkuang_list = request.POST.getlist('zhongjiao_qingkuang', [])
+        obj.zhongjiao_qingkuang = ','.join(zhongjiao_qingkuang_list)
+
+        xiajiao_qingkuang_list = request.POST.getlist('xiajiao_qingkuang', [])
+        obj.xiajiao_qingkuang = ','.join(xiajiao_qingkuang_list)
 
         minyuecha_list = request.POST.getlist('minyuecha', [])
         obj.minyuecha = ','.join(minyuecha_list)
